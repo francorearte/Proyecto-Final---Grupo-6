@@ -42,5 +42,27 @@
         </section>
 
     </section>
+    <button id="BtnOscuro">Normal/Oscuro</button>
+
+    <section>
+        <div class="reproductor">
+            <div class="songName">
+                <h2 id="titulo">Canción</h2>
+            </div>
+            <audio id="reproductor" src=""></audio>
+            <div class="controles">
+                <button onclick="prevSong()">⏮</button>
+                <button onclick="playPause()">▶️</button>
+                <button onclick="nextSong()">⏭</button>
+            </div>
+            <div class="progresoCancion">
+                <input type="range" id="progress" min="0" max="100" value="0">
+            </div>
+            <div class="playlist" id="playlist">
+            <!-- Lista de canciones se genera dinámicamente -->
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
