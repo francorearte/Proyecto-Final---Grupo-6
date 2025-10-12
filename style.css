@@ -1,0 +1,49 @@
+.carousel-item.active {
+  display: flex !important;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.carousel-item {
+  min-height: 500px;
+  background-color: black;
+}
+
+.carousel-item img {
+  max-width: 45%;
+  width: 45%;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.carousel-item .txt,
+.carousel-item section {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  color: yellow;
+  font-size: 20px;
+}
+
+.carousel-item ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.carousel-item h3 {
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-item.active {
+    flex-direction: column;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
