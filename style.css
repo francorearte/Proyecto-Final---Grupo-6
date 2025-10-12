@@ -21,7 +21,7 @@
 .carousel-item .txt,
 .carousel-item section {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
   text-align: left;
   color: yellow;
   font-size: 20px;
