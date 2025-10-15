@@ -1,3 +1,13 @@
+.btn-Oscuro {
+  border-radius: 10px;
+}
+
+.btn-Oscuro:hover {
+  color: rgb(246, 247, 248);
+  background-color: #5a88ac;
+  transition: 0.3s ease;
+}
+
 #inicio {
   width: 100vw;
   height: 100vh;
@@ -75,8 +85,7 @@ video {
   flex-shrink: 0;
 }
 
-.carousel-item .txt,
-.carousel-item section {
+.carousel-item .txt, .carousel-item section {
   flex: 1;
   padding: 15px;
   text-align: left;
