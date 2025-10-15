@@ -93,17 +93,8 @@ video {
   margin-bottom: 15px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .carousel-item.active {
-    flex-direction: column;
-  }
-  
-  .carousel-item img {
-    max-width: 100%;
-    width: 100%;
-  }
-}
+
+
 .carousel-item h2 {
   font-size: 30px;
   margin-bottom: 15px;
@@ -116,3 +107,17 @@ video {
   color: white;
   font-family: "Arial", sans-serif;
 }
+
+
+
+
+#galeria img{
+  
+  width:  100%;
+ 
+
+  }
+body{
+  background-color: black;
+}
+
