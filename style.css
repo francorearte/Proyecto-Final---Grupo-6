@@ -68,8 +68,8 @@ video {
 }
 
 .carousel-item img {
-  max-width: 45%;
-  width: 45%;
+  max-width: 40%;
+  width: 40%;
   height: auto;
   object-fit: contain;
   flex-shrink: 0;
