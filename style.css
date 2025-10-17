@@ -33,7 +33,7 @@ video {
   left: 0;
   z-index: -1;
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .contenido {
@@ -45,12 +45,30 @@ video {
   z-index: 1;
   color: #ffffff;
   text-align: center;
-  bottom: 20px;
+  bottom: 15px;
 
 }
 
+
+
+.pulse-animation {
+  animation: pulse 3s infinite; 
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
 .contenido img {
   width: 300px;
+  margin: 20px;
 
 }
 
@@ -62,7 +80,8 @@ video {
 
 .contenido p {
   font-family: "Michroma", sans-serif;
-  font-size: 20px;
+  font-size: 18
+  px;
   color: gold;
 }
 .carousel-item.active {
@@ -76,6 +95,12 @@ video {
   min-height: 500px;
   background-color: black;
 }
+
+.carousel-item1{
+  min-height: 500px;
+  background-color: black;
+}
+
 
 .carousel-item img {
   max-width: 40%;
@@ -117,6 +142,11 @@ video {
   font-family: "Arial", sans-serif;
 }
 
+.navbar{
+  background-color: black;
+  height: 50px;
+  
+}
 
 
 
@@ -125,3 +155,56 @@ video {
   width:  100%;
  }
 
+
+.custom-shadow {
+  box-shadow: 0 6px 15px gold;
+  opacity: 0.8;
+} 
+
+.navbar {
+  background-color:black;
+  text-align: center;
+}
+
+.nav-link {
+  color:gold;
+  font-size: 15px; 
+  font-family: "Michroma", sans-serif; 
+  
+}
+
+.navbar-nav .nav-link:hover {
+  color: red;
+}
+
+
+.btn-mode {
+  margin-right: 40px;
+  border: none;
+  color: gold; 
+  font-size: 22px;
+
+}
+
+.btn-mode:hover, .btn-mode:focus {
+  background-color: transparent;
+  color:red; 
+}
+.dropdown-menu {
+  background-color:black; 
+
+}
+
+.dropdown-item {
+  color:white;
+  font-size: 12px ;
+  font-family: "Michroma", sans-serif; 
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color:gold;
+  color:black;
+}
+.dropdown-item i {
+  margin-right: 8px; 
+}

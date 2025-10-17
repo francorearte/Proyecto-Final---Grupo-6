@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="light">
+<html lang="es">
+<!-- <html lang="es" data-bs-theme="light"></html> -->
 
 <head>
   <meta charset="UTF-8" />
@@ -9,7 +10,8 @@
   <link rel="icon" type="image" href="./imagenes/Icono Logo Soda Stereo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- links de bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <!-- link de css -->
   <link rel="stylesheet" href="style.css" />
@@ -26,27 +28,65 @@
   <header>
     <section id="inicio">
 
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#biografia">Biografía</a></li>
-          <li><a href="#discografia">Discografía</a></li>
-          <li><a href="#musica">Música</a></li>
-          <li><a href="#videos">Videos</a></li>
-          <li><a href="#galeria">Galería</a></li>
-          <li><a href="#shows">Shows</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+
+      <nav class="navbar navbar-expand-lg fixed-top custom-shadow">
+        <div class="container-fluid">
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-center w-100">
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#biografia">Biografía</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#discografia">Discografía</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#musica">Música</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#videos">Videos</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#galeria">Galería</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#shows">Shows</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+
+            </ul>
+                  <div class="dropdown">
+                    <button class="btn btn-mode dropdown-toggle" type="button" id="themeDropdown" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="bi bi-sun"></i> 
+                    <ul class="dropdown-menu dropdown-menu-end bg-black" aria-labelledby="themeDropdown">
+                      <li><a class="dropdown-item" href="#" data-theme="light"><i class="bi bi-sun"></i> Claro</a></li>
+                      <li><a class="dropdown-item" href="#" data-theme="dark"><i class="bi bi-moon"></i> Oscuro</a></li>
+
+                    </ul>
+                  </div>
+                
+          </div>
+        </div>
       </nav>
-     
-  <button class="btn-Oscuro" type="button" id="dropdownMenuButtonLight" aria-expanded="false">
-      Modo Oscuro
-    </button>
+
+      
       <video src="./imagenes/Video - Soda Stereo.mp4" autoplay loop muted type="video/mp4">Video de fondo</video>
       <div class="capa"></div>
 
-      <div class="contenido">
-        <img src="./imagenes/Logo Soda Stereo.png" alt="logo de la banda soda stereo" />
+      <div class="contenido ">
+        <img class="pulse-animation" src="./imagenes/Logo Soda Stereo.png" alt="logo de la banda soda stereo" />
         <h1>La banda de rock que conquistó el mundo latino</h1>
         <p>
           Explora el mundo Soda Stereo: Historia, Canciones y Legado Musical
@@ -59,7 +99,7 @@
 
 
   <main>
-  
+
     <section id="biografia">
       <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
@@ -335,12 +375,15 @@
         <p>Disfruta en esta sección algunos de los videos con mayores visitas en Youtube</p>
       </div>
       <div class="text-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/spvWfRRUW-I?si=A10_gwM_mCKg7A0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/spvWfRRUW-I?si=A10_gwM_mCKg7A0c"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/VoGwvVoaoCw?si=VrS-LPZvPtHNyOW0"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
+
         <iframe width="560" height="315" src="https://www.youtube.com/embed/vNKUDiA2YQE?si=r4p8d4OyTHHujn36"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
