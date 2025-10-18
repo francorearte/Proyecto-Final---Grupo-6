@@ -27,7 +27,7 @@ video {
 }
 
 .contenido {
-  
+
   width: 100vw;
   align-items: center;
   justify-content: center;
@@ -42,20 +42,23 @@ video {
 
 
 .pulse-animation {
-  animation: pulse 3s infinite; 
+  animation: pulse 3s infinite;
 }
 
 @keyframes pulse {
   0% {
-    transform: scale(1); 
+    transform: scale(1);
   }
+
   50% {
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
+
   100% {
-    transform: scale(1); 
+    transform: scale(1);
   }
 }
+
 .contenido img {
   width: 300px;
   margin: 20px;
@@ -70,10 +73,10 @@ video {
 
 .contenido p {
   font-family: "Michroma", sans-serif;
-  font-size: 18
-  px;
+  font-size: 18 px;
   color: gold;
 }
+
 .carousel-item.active {
   display: flex !important;
   align-items: center;
@@ -86,7 +89,7 @@ video {
   background-color: black;
 }
 
-.carousel-item1{
+.carousel-item1 {
   min-height: 500px;
   background-color: black;
 }
@@ -100,7 +103,8 @@ video {
   flex-shrink: 0;
 }
 
-.carousel-item .txt, .carousel-item section {
+.carousel-item .txt,
+.carousel-item section {
   flex: 1;
   padding: 15px;
   text-align: left;
@@ -125,6 +129,7 @@ video {
   color: gold;
   font-family: "Michroma", sans-serif;
 }
+
 .carousel-item p {
   font-size: 20px;
   line-height: 1.5;
@@ -132,14 +137,16 @@ video {
   font-family: "Arial", sans-serif;
 }
 
-.navbar{
+.navbar {
   background-color: black;
   height: 50px;
-  
+
 }
-.navbar-toggler{
+
+.navbar-toggler {
   background-color: gold;
 }
+
 .navbar-collapse.show {
   background-color: #000;
 }
@@ -147,115 +154,117 @@ video {
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .contenedor-reproductor {
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
 
-    background: url(./imagenes/bocanada.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(8px);
+  background: url(./imagenes/bocanada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(8px);
 }
 
 .contenedor-reproductor::before {
-    content: '';
-    position: absolute;
-    background-color: rgba(0,0,0,0.3);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
-.contenedor-reproductor > * {
-    position: relative;
-    z-index: 3;
+.contenedor-reproductor>* {
+  position: relative;
+  z-index: 3;
 }
 
 .reproductor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 400px;
-    padding: 10px;
-    border-radius: 30px;
-    background-color: rgba(228,228,228,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 400px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgba(228, 228, 228, 0.3);
 }
 
 .reproductor h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.8;
-    color: rgba(228,228,228);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8;
+  color: rgba(228, 228, 228);
 }
 
 .reproductor p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.5;
-    color: rgba(228,228,228);
-    opacity: 0.6;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(228, 228, 228);
+  opacity: 0.6;
 }
 
 #progreso {
-    appearance: none;
-    width: 85%;
-    height: 10px;
-    background: rgba(165,165,165,0.3);
-    border-radius: 5px;
-    cursor: pointer;
+  appearance: none;
+  width: 85%;
+  height: 10px;
+  background: rgba(165, 165, 165, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #progreso::-webkit-slider-thumb {
-    appearance: none;
-    background: rgba(165,165,165,0.3);
-    width: 15px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    outline: 3px solid rgb(0, 0, 0);
-    box-shadow: 0 5px 9px yellow;
+  appearance: none;
+  background: rgba(165, 165, 165, 0.3);
+  width: 15px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  outline: 3px solid rgb(0, 0, 0);
+  box-shadow: 0 5px 9px yellow;
 }
 
-.controls button{
-    width: 50px;
-    aspect-ratio: 1/1;
-    margin: 15px;
-    background: rgba(165,165,165,0.3);
-    color: yellow;
-    border-radius: 50%;
-    border: 1px solid yellow;
-    outline: 0;
-    font-size: 1.5rem;
-    box-shadow: 0 5px 9px yellow;
-    transition: all 0.3s linear;
+.controls button {
+  width: 50px;
+  aspect-ratio: 1/1;
+  margin: 15px;
+  background: rgba(165, 165, 165, 0.3);
+  color: yellow;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  outline: 0;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 9px yellow;
+  transition: all 0.3s linear;
 }
 
 .controls .control:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .controls .play {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .controls .play:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .contenedor-reproductor {
-  transform: scale(0.7); /* achica todo al 80% */
-  transform-origin: center; /* mantiene el centro */
+  transform: scale(0.7);
+  /* achica todo al 80% */
+  transform-origin: center;
+  /* mantiene el centro */
 }
 
 .galeria-container {
@@ -271,6 +280,8 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-color: yellow;
+  box-shadow: 0 5px 9px yellow;
 }
 
 .galeria {
@@ -297,18 +308,18 @@ video {
 .custom-shadow {
   box-shadow: 0 6px 15px gold;
   opacity: 0.8;
-} 
+}
 
 .navbar {
-  background-color:black;
+  background-color: black;
   text-align: center;
 }
 
 .nav-link {
-  color:gold;
-  font-size: 15px; 
-  font-family: "Michroma", sans-serif; 
-  
+  color: gold;
+  font-size: 15px;
+  font-family: "Michroma", sans-serif;
+
 }
 
 .navbar-nav .nav-link:hover {
@@ -319,30 +330,34 @@ video {
 .btn-mode {
   margin-right: 40px;
   border: none;
-  color: gold; 
+  color: gold;
   font-size: 22px;
 
 }
 
-.btn-mode:hover, .btn-mode:focus {
+.btn-mode:hover,
+.btn-mode:focus {
   background-color: transparent;
-  color:red; 
+  color: red;
 }
+
 .dropdown-menu {
-  background-color:black; 
+  background-color: black;
 
 }
 
 .dropdown-item {
-  color:white;
-  font-size: 12px ;
-  font-family: "Michroma", sans-serif; 
+  color: white;
+  font-size: 12px;
+  font-family: "Michroma", sans-serif;
 }
 
-.dropdown-item:hover, .dropdown-item:focus {
-  background-color:gold;
-  color:black;
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: gold;
+  color: black;
 }
+
 .dropdown-item i {
-  margin-right: 8px; 
+  margin-right: 8px;
 }
