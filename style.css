@@ -258,14 +258,40 @@ video {
   transform-origin: center; /* mantiene el centro */
 }
 
-#galeria img{
-  
-  width:  100%;
+.galeria-container {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
 }
 
-#galeria img:hover {
-  transform: scale(1.1);
-  transition: all 0.3s linear;
+.imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galeria {
+  width: 90%;
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  gap: 16px;
+}
+
+.elemento {
+  flex: 1;
+  overflow: visible;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: flex 0.8s ease-in-out;
+}
+
+.elemento:hover {
+  flex: 9;
 }
 
 .custom-shadow {
