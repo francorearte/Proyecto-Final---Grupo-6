@@ -84,6 +84,13 @@ video {
   padding: 20px;
 }
 
+.carousel-slide {
+  transform: scale(0.98);
+  /* achica todo al 80% */
+  transform-origin: center;
+  /* mantiene el centro */
+}
+
 .carousel-item {
   min-height: 500px;
   background-color: black;
@@ -151,7 +158,8 @@ video {
   background-color: #000;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
 
 * {
   font-family: "Montserrat", sans-serif;
@@ -274,6 +282,13 @@ video {
   min-height: 95vh;
   display: flex;
   align-items: center;
+}
+
+.galeria-container {
+  transform: scale(0.97);
+  /* achica todo al 80% */
+  transform-origin: center;
+  /* mantiene el centro */
 }
 
 .imagen {
