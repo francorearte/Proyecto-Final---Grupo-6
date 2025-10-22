@@ -4,6 +4,9 @@ header {
     width: 100%;
     height: 100%; 
 }
+html {
+  scroll-behavior: smooth;
+}
 
 
 #inicio {
@@ -142,32 +145,24 @@ p {
 }
 
 
-
-.carousel-item.active {
-  display: flex !important;
-  align-items: center;
-  gap: 30px;
-  padding: 20px;
+.animate__animated.animate__bounce {
+  --animate-duration: 5s;
 }
 
-.carousel-item {
-  min-height: 500px;
-  background-color: black;
+.animate__animated.animate__fadeIn{
+  --animate-duration: 5s;
 }
 
-.carousel-item1{
-  min-height: 500px;
-  background-color: black;
+.animate__animated.animate__fadeInLeftBig{
+  --animate-duration: 4s;
+}
+
+.animate__animated.animate__fadeInRight{
+  --animate-duration: 5s;
 }
 
 
-.carousel-item img {
-  max-width: 40%;
-  width: 40%;
-  height: auto;
-  object-fit: contain;
-  flex-shrink: 0;
-}
+
 
 .carousel-item .txt, .carousel-item section {
   flex: 1;
@@ -200,20 +195,72 @@ p {
   color: white;
   font-family: "Arial", sans-serif;
 }
-.animate__animated.animate__bounce {
-  --animate-duration: 5s;
+
+
+
+
+/* Estilo para los controles del carrusel para que sean más visibles */
+#biografiaCarousel .carousel-control-prev-icon,
+#biografiaCarousel .carousel-control-next-icon {
+    /* El filtro invierte el color si estás en modo oscuro, si no tienes un modo oscuro global */
+    filter: invert(100%); 
 }
 
-.animate__animated.animate__fadeIn{
-  --animate-duration: 5s;
+#biografia{
+background: #000000;  
+background: -webkit-linear-gradient(to right, #434343, #000000); 
+background: linear-gradient(to right, #434343, #000000); /
+
 }
 
-.animate__animated.animate__fadeInLeftBig{
-  --animate-duration: 4s;
+.card{
+background: #000000;  
+background: -webkit-linear-gradient(to right, #434343, #000000); 
+background: linear-gradient(to right, #434343, #000000); /
 }
 
-.animate__animated.animate__fadeInRight{
-  --animate-duration: 5s;
+.titulo{
+  color: gold;
+    font-size: 20px;
+    font-family: 'Michroma', sans-serif;
+
+}
+
+.titulos{
+  color: gold;
+    font-size: 30px;
+    font-family: 'Michroma', sans-serif;
+
 }
 
 
+
+
+.carousel-indicators button {
+    
+    background-color: #ccc; 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+}
+
+
+.carousel-indicators .active {
+    
+    background-color: gold; 
+    
+    
+}
+
+
+.carousel-control-prev {
+  left: -50px; 
+ width: auto;
+}
+
+
+.carousel-control-next {
+   
+    right: -50px; 
+    width: auto;
+}
