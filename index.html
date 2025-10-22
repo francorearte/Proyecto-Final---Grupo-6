@@ -19,6 +19,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Michroma&display=swap" rel="stylesheet">
+  <!-- Animaciones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <title>Proyecto Final - Grupo 6</title>
 
@@ -28,8 +30,86 @@
   <header>
     <section id="inicio">
 
+      <div class="contenedor-video-fondo">
+        <video autoplay muted loop class="video-fondo">
+          <source src="./imagenes/Video - Soda Stereo.mp4" type="video/mp4">
+          Video de fondo
+        </video>
+        <div class="oscurecer-video"></div>
+      </div>
+
+
 
       <nav class="navbar navbar-expand-lg fixed-top custom-shadow">
+        <div class="container-fluid">
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item me-4">
+                <a class="nav-link animate__animated animate__fadeInLeftBig" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link animate__animated animate__fadeInLeftBig" href="#biografia">Biografía</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link animate__animated animate__fadeInLeftBig" href="#discografia">Discografía</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link animate__animated animate__fadeInLeftBig" href="#musica">Música</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link animate__animated animate__fadeInLeftBig" href="#galeria">Galería</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link animate__animated animate__fadeInLeftBig" href="#shows">Shows</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link animate__animated animate__fadeInLeftBig" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+
+          <button id="darkModeToggle" class="btn btn-outline-light ms-3 d-flex align-items-center"
+            aria-label="Alternar modo oscuro">
+            <i class="bi bi-moon-fill colo" id="darkModeIcon"></i>
+          </button>
+
+
+        </div>
+      </nav>
+
+
+      <div class="container text-white ">
+        <div class="row text-center justify-content-center">
+
+          <div class="col-12 col-md-6 mb-4">
+            <img src="./imagenes/Logo Soda Stereo.png" alt="Logo de Soda Stereo" class="logo img-fluid pulse-animation animate__animated animate__fadeIn">
+          </div>
+
+          <div class="col-12">
+
+            <h1 class="animate__animated animate__fadeIn display-6 display-sm-2 display-md-1 mb-3 text-white">La banda de rock que
+              conquistó el mundo latino</h1>
+
+            <p class="animate__animated animate__fadeInRight col-lg-12 mx-auto text">
+              Explora el mundo Soda Stereo: Historia, Canciones y Legado Musical
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </header>
+
+
+  <!-- <nav class="navbar navbar-expand-lg fixed-top custom-shadow">
         <div class="container-fluid">
 
 
@@ -94,11 +174,11 @@
         </p>
       </div>
 
-    </section>
+    </section> -->
   </header>
 
 
-  <main>
+  <!-- <main>
 
     <section id="biografia">
       <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -457,7 +537,7 @@
 
     <p id="copyright">© 2025 Todos los derechos reservados. El contenido musical pertenece a Soda Stereo y Sony Music.
     </p>
-  </footer>
+  </footer> -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
