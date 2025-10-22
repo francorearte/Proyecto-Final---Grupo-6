@@ -264,3 +264,11 @@ background: linear-gradient(to right, #434343, #000000); /
     right: -50px; 
     width: auto;
 }
+
+
+#videos{
+background: #000000;  
+background: -webkit-linear-gradient(to right, #434343, #000000); 
+background: linear-gradient(to right, #434343, #000000); /
+}
+
