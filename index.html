@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="light">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Grupo 6" />
@@ -16,505 +17,575 @@
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Michroma&display=swap" rel="stylesheet">
     <title>Proyecto Final - Grupo 6</title>
 </head>
+
 <body>
-    <header>
-        <section id="inicio" class="position-relative">
-            <nav class="navbar navbar-expand-lg fixed-top custom-shadow bg-body-tertiary">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#inicio">Inicio</a>
+
+    <section id="inicio" class="position-relative">
+        <nav class="navbar navbar-expand-lg fixed-top custom-shadow bg-body-tertiary">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#biografia">Biografía</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#discografia">Discografía</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#musica">Música</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#videos">Videos</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#galeria">Galería</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#shows">Shows</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-mode dropdown-toggle" type="button" id="themeDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-sun"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end bg-black" aria-labelledby="themeDropdown">
+                            <li><a class="dropdown-item" href="#" data-theme="light"><i class="bi bi-sun"></i> Claro</a>
                             </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#biografia">Biografía</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#discografia">Discografía</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#musica">Música</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#videos">Videos</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#galeria">Galería</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#shows">Shows</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#contacto">Contacto</a>
-                            </li>
+                            <li><a class="dropdown-item" href="#" data-theme="dark"><i class="bi bi-moon"></i>
+                                    Oscuro</a></li>
                         </ul>
-                        <div class="dropdown">
-                            <button class="btn btn-mode dropdown-toggle" type="button" id="themeDropdown"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-sun"></i>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-end bg-black" aria-labelledby="themeDropdown">
-                                <li><a class="dropdown-item" href="#" data-theme="light"><i class="bi bi-sun"></i> Claro</a></li>
-                                <li><a class="dropdown-item" href="#" data-theme="dark"><i class="bi bi-moon"></i> Oscuro</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <video src="./imagenes/Video - Soda Stereo.mp4" autoplay loop muted type="video/mp4" class="w-100"></video>
-            <div class="capa position-absolute top-0 start-0 w-100 h-100"></div>
-            <div class="contenido container text-center position-absolute top-50 start-50 translate-middle">
-                <img class="pulse-animation img-fluid mb-3" src="./imagenes/Logo Soda Stereo.png" alt="logo de la banda soda stereo" />
-                <h1 class="display-4">La banda de rock que conquistó el mundo latino</h1>
-                <p class="lead">Explora el mundo Soda Stereo: Historia, Canciones y Legado Musical Inmortal</p>
-            </div>
-        </section>
-    </header>
-    <main>
-        <section id="biografia" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Biografía</h2>
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <img src="./imagenes/Banda completa.jpg" class="d-block w-100 img-fluid rounded" alt="Soda Stereo banda completa">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <h3 class="text-gold">Soda Stereo</h3>
-                                    <p>Soda Stereo fue una banda de rock argentina formada en 1982 originalmente por el cantante y guitarrista
-                                        Gustavo Cerati, el bajista Zeta Bosio y el baterista Charly Alberti. Es considerada por un sector de la
-                                        crítica especializada como la banda más importante, popular e influyente del rock en español
-                                        y una leyenda de la música latinoamericana. Fueron el primer grupo de habla hispana en conseguir un éxito
-                                        masivo en Latinoamérica y tuvieron un papel muy importante en el desarrollo y la difusión del rock
-                                        latinoamericano y el rock en español durante los años 80 y los 90. Durante su carrera, fueron vanguardistas y
-                                        marcaron tendencia en Latinoamérica, en la que protagonizaron diversos géneros como la música
-                                        divertida de sus inicios, la new wave, el dark wave, el hard rock, el rock alternativo y el rock electrónico
-                                        de sus finales. Soda Stereo ha encabezado las listas de todos los tiempos en el mundo, donde se establecieron
-                                        varios récords de ventas de discos y asistencias a conciertos. Hasta 2007 se cifraban las
-                                        ventas de la banda en más de siete millones de copias vendidas de sus álbumes; sin embargo, estimaciones
-                                        más recientes de 2018 discrepan atribuyéndoles más de veinte millones de copias vendidas en todo el mundo.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <img src="./imagenes/Gustavo Cerati.jpg" class="d-block w-100 img-fluid rounded" alt="Gustavo Cerati">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <h3 class="text-gold">Gustavo Cerati</h3>
-                                    <p>Gustavo Adrián Cerati (Buenos Aires, 11 de agosto de 1959-Buenos Aires, 4 de septiembre de
-                                        2014) fue un músico, cantautor y productor discográfico argentino que obtuvo reconocimiento por haber
-                                        sido el líder, vocalista, compositor y guitarrista de la banda de rock Soda Stereo. La prensa especializada
-                                        y otros músicos lo consideran como uno de los artistas más influyentes del rock latinoamericano.
-                                        Influenciado por las bandas británicas The Beatles y The Police, Cerati integró diversas agrupaciones desde
-                                        su adolescencia y en 1982 fundó la banda de rock latino Soda Stereo. Líder y principal compositor del
-                                        conjunto, a partir de Signos (1986) su forma de hacer canciones comenzó a madurar, y su consolidación la
-                                        alcanzó a comienzos de los años 1990 con Canción animal, en el que volvía a las raíces del rock argentino de los
-                                        años 1970. Paralelo a su carrera con el grupo, en 1992 publicó a dúo con Daniel Melero el álbum Colores
-                                        santos, considerado uno de los primeros en Sudamérica en incluir música electrónica, y al año siguiente, el
-                                        primero como solista, Amor amarillo. Su gusto por la electrónica lo llevó a incorporarla a sus últimos
-                                        trabajos con Soda Stereo. Después de la separación de la banda, lanzó Bocanada (1999) y Siempre es hoy
-                                        (2002), donde mostró más su interés por el género, que manifestó libremente en sus proyectos alternos Plan
-                                        V y Ocio, con la edición de álbumes y presentaciones que le dieron mayor difusión a este tipo de música.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <img src="./imagenes/Charly Alberti.jpg" class="d-block w-100 img-fluid rounded" alt="Charly Alberti">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <h3 class="text-gold">Charly Alberti</h3>
-                                    <p>Charly Alberti (nombre completo Carlos Alberto García Moreno), nacido el 27 de octubre de
-                                        1963 en Buenos Aires, Argentina, es un famoso baterista y compositor, conocido por ser uno de los miembros
-                                        fundamentales de la icónica banda de rock Soda Stereo. Considerado uno de los bateristas más importantes
-                                        de América Latina, su estilo ha sido una parte clave del sonido de la banda, que alcanzó una gran
-                                        popularidad en toda Hispanoamérica y más allá. Alberti se unió a Soda Stereo en 1982, junto a Gustavo Cerati
-                                        (voz y guitarra) y Zeta Bosio (bajo), con quienes formó el trío que revolucionó el rock en español. Durante
-                                        la exitosa carrera de la banda, Charly fue fundamental en la creación de su sonido, aportando no solo
-                                        su habilidad como baterista, sino también con su estilo particular, que variaba entre el rock, el new
-                                        wave, y el pop. Alberti participó en todos los discos de la banda, que incluyen álbumes icónicos como
-                                        "Signos", "Canción Animal", "Doble Vida" y "Canción Animal". Soda Stereo es considerada una de las bandas más
-                                        influyentes en el mundo del rock en español, y su legado sigue siendo muy relevante hoy en día. Tras la
-                                        separación de Soda Stereo en 1997, Charly Alberti continuó con su carrera en la música, y fue parte de
-                                        varios proyectos, tanto en solitario como colaborando con otros artistas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <img src="./imagenes/Zeta Bosio.jpg" class="d-block w-100 img-fluid rounded" alt="Zeta Bosio">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <h3 class="text-gold">Zeta Bosio</h3>
-                                    <p>Zeta Bosio (Carlos Alberto Bosio), nacido el 1 de octubre de 1959 en Buenos Aires, es un
-                                        bajista y compositor argentino, conocido por ser uno de los miembros fundadores de Soda Stereo, la
-                                        banda de rock en español más influyente de los años 80 y 90. Junto a Gustavo Cerati y Charly Alberti, formó
-                                        el trío que marcó un hito en la música latina. Bosio destacó por su estilo único en el bajo, siendo
-                                        responsable de algunas de las líneas más icónicas de la banda, como en "Te hacen falta vitaminas" y "En el
-                                        borde". Tras la separación de Soda Stereo en 1997, continuó su carrera con proyectos en solitario y
-                                        colaboraciones. En 2014, tras la muerte de Cerati, Bosio se unió a Charly Alberti en el proyecto "Soda Stereo:
-                                        Gracias Totales", una gira homenaje que revivió el legado de la banda. Su impacto como bajista y
-                                        compositor sigue siendo fundamental en el rock en español.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section id="discografia" class="py-5 bg-light">
-            <div class="container">
-                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <img src="./imagenes/soda-stereo.jpg" class="d-block w-100 img-fluid rounded" alt="portada del album Soda Stereo">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <section class="txt">
-                                        <h3 class="text-gold">Álbum: Soda Stereo</h3>
-                                        <p>Lanzamiento: 27 de agosto de 1984 por Estudio CBS (Buenos Aires, Argentina)</p>
-                                        <p>Canciones: </p>
-                                        <ul>
-                                            <li>¿Por qué no puedo ser tu Jet-Set?</li>
-                                            <li>Sobredosis de T.V.</li>
-                                            <li>Te hacen falta vitaminas</li>
-                                            <li>Tratame suavemente</li>
-                                            <li>Dietético</li>
-                                            <li>Tele-Ka</li>
-                                            <li>Ni un Segundo</li>
-                                            <li>Un misil en mi placard</li>
-                                            <li>El tiempo es dinero</li>
-                                            <li>Afrodisíacos</li>
-                                            <li>Mi novia tiene biceps</li>
-                                        </ul>
-                                        <a href="https://music.youtube.com/browse/MPREb_FY5wMWTZiL6" target="_blank" class="btn btn-primary">Escuchar album</a>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <img src="./imagenes/nada-personal.jpg" class="d-block w-100 img-fluid rounded" alt="portada del album Nada Personal">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <section class="txt">
-                                        <h3 class="text-gold">Álbum: Nada Personal</h3>
-                                        <p>Lanzamiento: 21 de noviembre de 1985 por Estudios Moebio (Buenos Aires, Argentina)</p>
-                                        <p>Canciones: </p>
-                                        <ul>
-                                            <li>Nada personal</li>
-                                            <li>Si no fuera por..</li>
-                                            <li>Cuando pase el temblor</li>
-                                            <li>Danza rota</li>
-                                            <li>El cuerpo del delito</li>
-                                            <li>Juego de seducción</li>
-                                            <li>Estoy azulado</li>
-                                            <li>Observándonos (Satélites)</li>
-                                            <li>Imágenes retro (Telarañas)</li>
-                                            <li>Ecos</li>
-                                        </ul>
-                                        <a href="https://music.youtube.com/browse/MPREb_xkBO3uL2Y0v" target="_blank" class="btn btn-primary">Escuchar Album</a>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <img src="./imagenes/signos.jpg" class="d-block w-100 img-fluid rounded" alt="portada del album Signos">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <section class="txt">
-                                        <h3 class="text-gold">Álbum: Signos</h3>
-                                        <p>Lanzamiento: 10 de noviembre de 1986 por Discográfica: Sony Music</p>
-                                        <p>Canciones: </p>
-                                        <ul>
-                                            <li>Sin sobresaltos</li>
-                                            <li>El rito</li>
-                                            <li>Prófugos</li>
-                                            <li>No existes</li>
-                                            <li>Persiana americana</li>
-                                            <li>En camino</li>
-                                            <li>Signos</li>
-                                            <li>Final caja negra</li>
-                                        </ul>
-                                        <a href="https://music.youtube.com/browse/MPREb_vT1f0GE91Sa" target="_blank" class="btn btn-primary">Escuchar Álbum</a>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <img src="./imagenes/doble-vida.jpg" class="d-block w-100 img-fluid rounded" alt="album Doble Vida">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <section class="txt">
-                                        <h3 class="text-gold">Álbum: Doble Vida</h3>
-                                        <p>Lanzamiento: 15 de septiembre de 1988 por Discográfica: Sony Music</p>
-                                        <p>Canciones: </p>
-                                        <ul>
-                                            <li>Pícnic en el 4° B</li>
-                                            <li>En la ciudad de la furia</li>
-                                            <li>Lo que sangra (La cúpula)</li>
-                                            <li>En el borde</li>
-                                            <li>Languis</li>
-                                            <li>Día común - Doble vida</li>
-                                            <li>Corazón delator</li>
-                                            <li>El ritmo de tus ojos</li>
-                                            <li>Terapia de amor intensiva</li>
-                                        </ul>
-                                        <a href="https://music.youtube.com/browse/MPREb_21QKw3VDMXz" target="_blank" class="btn btn-primary">Escuchar Álbum</a>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <img src="./imagenes/cancin-animal.jpg" class="d-block w-100 img-fluid rounded" alt="album Cancion Animal">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <section class="txt">
-                                        <h3 class="text-gold">Álbum: Canción animal</h3>
-                                        <p>Lanzamiento: 7 de agosto de 1990 por Discográfica: Sony Music</p>
-                                        <p>Canciones: </p>
-                                        <ul>
-                                            <li>(En) El séptimo día</li>
-                                            <li>Un millón de años luz</li>
-                                            <li>Canción animal</li>
-                                            <li>1990</li>
-                                            <li>Sueles dejarme solo</li>
-                                            <li>De música ligera</li>
-                                            <li>Hombre al agua</li>
-                                            <li>Entre caníbales</li>
-                                            <li>Té para 3</li>
-                                            <li>Cae el sol</li>
-                                        </ul>
-                                        <a href="https://music.youtube.com/browse/MPREb_ZMGnFMwKuo8" target="_blank" class="btn btn-primary">Escuchar Álbum</a>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <img src="./imagenes/dynamo.jpg" class="d-block w-100 img-fluid rounded" alt="album Dynamo">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <section class="txt">
-                                        <h3 class="text-gold">Álbum: Dynamo</h3>
-                                        <p>Lanzamiento: 26 de octubre de 1992 por Discográfica: Sony Music</p>
-                                        <p>Canciones: </p>
-                                        <ul>
-                                            <li>Secuencia inicia</li>
-                                            <li>Toma la ruta</li>
-                                            <li>En remolinos</li>
-                                            <li>Primavera 0</li>
-                                            <li>Camaleón</li>
-                                            <li>Luna roja</li>
-                                            <li>Sweet sahumerio</li>
-                                            <li>Ameba</li>
-                                            <li>Nuestra Fe</li>
-                                            <li>Claroscuro</li>
-                                            <li>Fue</li>
-                                            <li>Texturas</li>
-                                        </ul>
-                                        <a href="https://music.youtube.com/browse/MPREb_7pdyN8yITUU" target="_blank" class="btn btn-primary">Escuchar Álbum</a>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-12 col-md-6">
-                                    <img src="./imagenes/sueñoStereo.jpg" class="d-block w-100 img-fluid rounded" alt="album Sueño Stereo">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <section class="txt">
-                                        <h3 class="text-gold">Álbum: Sueño Stereo</h3>
-                                        <p>Lanzamiento: 21 de junio de 1995 por Discográfica: Sony Music</p>
-                                        <p>Canciones: </p>
-                                        <ul>
-                                            <li>Ella usó mi cabeza como un revólver</li>
-                                            <li>Disco eterno</li>
-                                            <li>Zoom</li>
-                                            <li>Ojo de la tormenta</li>
-                                            <li>Efecto doppler</li>
-                                            <li>Paseando por Roma</li>
-                                            <li>Pasos</li>
-                                            <li>Ángel eléctrico</li>
-                                            <li>Crema de estrellas</li>
-                                            <li>Planta</li>
-                                            <li>X-Playo</li>
-                                            <li>Moirè</li>
-                                        </ul>
-                                        <a href="https://music.youtube.com/browse/MPREb_7LvbQPQlUGp" target="_blank" class="btn btn-primary">Escuchar Álbum</a>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section id="musica" class="py-5">
-            <div class="container">
-                <div class="contenedor-reproductor text-center">
-                    <section class="reproductor">
-                        <h2>Título</h2>
-                        <p>Nombre</p>
-                        <audio id="cancion" class="w-100">
-                            <source src="" type="audio/mpeg" />
-                        </audio>
-                        <input type="range" value="0" id="progreso" class="w-100 my-3" />
-                        <div class="controls d-flex justify-content-center gap-3">
-                            <button class="atras control btn btn-outline-secondary">
-                                <i class="bi bi-rewind-circle-fill"></i>
-                            </button>
-                            <button class="play btn btn-primary">
-                                <i class="bi bi-play-fill" id="icono-play"></i>
-                            </button>
-                            <button class="adelante control btn btn-outline-secondary">
-                                <i class="bi bi-fast-forward-circle-fill"></i>
-                            </button>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </section>
-        <section id="videos" class="py-5 bg-light">
-            <div class="container text-center">
-                <h1 class="mb-3">Videos</h1>
-                <p class="lead mb-4">Disfruta en esta sección algunos de los videos con mayores visitas en Youtube</p>
-                <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/spvWfRRUW-I?si=A10_gwM_mCKg7A0c"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/VoGwvVoaoCw?si=VrS-LPZvPtHNyOW0"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/vNKUDiA2YQE?si=r4p8d4OyTHHujn36"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/eguctGjUNLI?si=Z6d7slo78uDlSMHm"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </nav>
+        <video src="./imagenes/Video - Soda Stereo.mp4" autoplay loop muted type="video/mp4" class="w-100"></video>
+        <div class="capa position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="contenido container text-center position-absolute top-50 start-50 translate-middle">
+            <img class="pulse-animation img-fluid mb-3" src="./imagenes/Logo Soda Stereo.png"
+                alt="logo de la banda soda stereo" />
+            <h1 class="display-4">La banda de rock que conquistó el mundo latino</h1>
+            <p class="lead">Explora el mundo Soda Stereo: Historia, Canciones y Legado Musical Inmortal</p>
+        </div>
+    </section>
 
-        <section id="galeria" class="container-galeria py-5">
-            <div class="col-12 col-md-10 col-lg-8 text-center mx-auto">
-                <h2>
-                    Galería con algunas de las Mejores Imágenes de Soda Stereo
-                </h2>
+    <!--Main-->
+    <section id="biografia" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Biografía</h2>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="./imagenes/Banda completa.jpg" class="d-block w-100 img-fluid rounded"
+                                    alt="Soda Stereo banda completa">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h3 class="text-gold">Soda Stereo</h3>
+                                <p>Soda Stereo fue una banda de rock argentina formada en 1982 originalmente por el
+                                    cantante y guitarrista
+                                    Gustavo Cerati, el bajista Zeta Bosio y el baterista Charly Alberti. Es considerada
+                                    por un sector de la
+                                    crítica especializada como la banda más importante, popular e influyente del rock en
+                                    español
+                                    y una leyenda de la música latinoamericana. Fueron el primer grupo de habla hispana
+                                    en conseguir un éxito
+                                    masivo en Latinoamérica y tuvieron un papel muy importante en el desarrollo y la
+                                    difusión del rock
+                                    latinoamericano y el rock en español durante los años 80 y los 90. Durante su
+                                    carrera, fueron vanguardistas y
+                                    marcaron tendencia en Latinoamérica, en la que protagonizaron diversos géneros como
+                                    la música
+                                    divertida de sus inicios, la new wave, el dark wave, el hard rock, el rock
+                                    alternativo y el rock electrónico
+                                    de sus finales. Soda Stereo ha encabezado las listas de todos los tiempos en el
+                                    mundo, donde se establecieron
+                                    varios récords de ventas de discos y asistencias a conciertos. Hasta 2007 se
+                                    cifraban las
+                                    ventas de la banda en más de siete millones de copias vendidas de sus álbumes; sin
+                                    embargo, estimaciones
+                                    más recientes de 2018 discrepan atribuyéndoles más de veinte millones de copias
+                                    vendidas en todo el mundo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="./imagenes/Gustavo Cerati.jpg" class="d-block w-100 img-fluid rounded"
+                                    alt="Gustavo Cerati">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h3 class="text-gold">Gustavo Cerati</h3>
+                                <p>Gustavo Adrián Cerati (Buenos Aires, 11 de agosto de 1959-Buenos Aires, 4 de
+                                    septiembre de
+                                    2014) fue un músico, cantautor y productor discográfico argentino que obtuvo
+                                    reconocimiento por haber
+                                    sido el líder, vocalista, compositor y guitarrista de la banda de rock Soda Stereo.
+                                    La prensa especializada
+                                    y otros músicos lo consideran como uno de los artistas más influyentes del rock
+                                    latinoamericano.
+                                    Influenciado por las bandas británicas The Beatles y The Police, Cerati integró
+                                    diversas agrupaciones desde
+                                    su adolescencia y en 1982 fundó la banda de rock latino Soda Stereo. Líder y
+                                    principal compositor del
+                                    conjunto, a partir de Signos (1986) su forma de hacer canciones comenzó a madurar, y
+                                    su consolidación la
+                                    alcanzó a comienzos de los años 1990 con Canción animal, en el que volvía a las
+                                    raíces del rock argentino de los
+                                    años 1970. Paralelo a su carrera con el grupo, en 1992 publicó a dúo con Daniel
+                                    Melero el álbum Colores
+                                    santos, considerado uno de los primeros en Sudamérica en incluir música electrónica,
+                                    y al año siguiente, el
+                                    primero como solista, Amor amarillo. Su gusto por la electrónica lo llevó a
+                                    incorporarla a sus últimos
+                                    trabajos con Soda Stereo. Después de la separación de la banda, lanzó Bocanada
+                                    (1999) y Siempre es hoy
+                                    (2002), donde mostró más su interés por el género, que manifestó libremente en sus
+                                    proyectos alternos Plan
+                                    V y Ocio, con la edición de álbumes y presentaciones que le dieron mayor difusión a
+                                    este tipo de música.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="./imagenes/Charly Alberti.jpg" class="d-block w-100 img-fluid rounded"
+                                    alt="Charly Alberti">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h3 class="text-gold">Charly Alberti</h3>
+                                <p>Charly Alberti (nombre completo Carlos Alberto García Moreno), nacido el 27 de
+                                    octubre de
+                                    1963 en Buenos Aires, Argentina, es un famoso baterista y compositor, conocido por
+                                    ser uno de los miembros
+                                    fundamentales de la icónica banda de rock Soda Stereo. Considerado uno de los
+                                    bateristas más importantes
+                                    de América Latina, su estilo ha sido una parte clave del sonido de la banda, que
+                                    alcanzó una gran
+                                    popularidad en toda Hispanoamérica y más allá. Alberti se unió a Soda Stereo en
+                                    1982, junto a Gustavo Cerati
+                                    (voz y guitarra) y Zeta Bosio (bajo), con quienes formó el trío que revolucionó el
+                                    rock en español. Durante
+                                    la exitosa carrera de la banda, Charly fue fundamental en la creación de su sonido,
+                                    aportando no solo
+                                    su habilidad como baterista, sino también con su estilo particular, que variaba
+                                    entre el rock, el new
+                                    wave, y el pop. Alberti participó en todos los discos de la banda, que incluyen
+                                    álbumes icónicos como
+                                    "Signos", "Canción Animal", "Doble Vida" y "Canción Animal". Soda Stereo es
+                                    considerada una de las bandas más
+                                    influyentes en el mundo del rock en español, y su legado sigue siendo muy relevante
+                                    hoy en día. Tras la
+                                    separación de Soda Stereo en 1997, Charly Alberti continuó con su carrera en la
+                                    música, y fue parte de
+                                    varios proyectos, tanto en solitario como colaborando con otros artistas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="./imagenes/Zeta Bosio.jpg" class="d-block w-100 img-fluid rounded"
+                                    alt="Zeta Bosio">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h3 class="text-gold">Zeta Bosio</h3>
+                                <p>Zeta Bosio (Carlos Alberto Bosio), nacido el 1 de octubre de 1959 en Buenos Aires, es
+                                    un
+                                    bajista y compositor argentino, conocido por ser uno de los miembros fundadores de
+                                    Soda Stereo, la
+                                    banda de rock en español más influyente de los años 80 y 90. Junto a Gustavo Cerati
+                                    y Charly Alberti, formó
+                                    el trío que marcó un hito en la música latina. Bosio destacó por su estilo único en
+                                    el bajo, siendo
+                                    responsable de algunas de las líneas más icónicas de la banda, como en "Te hacen
+                                    falta vitaminas" y "En el
+                                    borde". Tras la separación de Soda Stereo en 1997, continuó su carrera con proyectos
+                                    en solitario y
+                                    colaboraciones. En 2014, tras la muerte de Cerati, Bosio se unió a Charly Alberti en
+                                    el proyecto "Soda Stereo:
+                                    Gracias Totales", una gira homenaje que revivió el legado de la banda. Su impacto
+                                    como bajista y
+                                    compositor sigue siendo fundamental en el rock en español.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="row g-3">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="./imagenes/Galería 1.jpg" alt="imagen 1" class="img-fluid rounded shadow">
+        </div>
+    </section>
+    <section id="discografia" class="py-5 bg-light">
+        <div class="container">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="./imagenes/soda-stereo.jpg" class="d-block w-100 img-fluid rounded"
+                                    alt="portada del album Soda Stereo">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <section class="txt">
+                                    <h3 class="text-gold">Álbum: Soda Stereo</h3>
+                                    <p>Lanzamiento: 27 de agosto de 1984 por Estudio CBS (Buenos Aires, Argentina)</p>
+                                    <p>Canciones: </p>
+                                    <ul>
+                                        <li>¿Por qué no puedo ser tu Jet-Set?</li>
+                                        <li>Sobredosis de T.V.</li>
+                                        <li>Te hacen falta vitaminas</li>
+                                        <li>Tratame suavemente</li>
+                                        <li>Dietético</li>
+                                        <li>Tele-Ka</li>
+                                        <li>Ni un Segundo</li>
+                                        <li>Un misil en mi placard</li>
+                                        <li>El tiempo es dinero</li>
+                                        <li>Afrodisíacos</li>
+                                        <li>Mi novia tiene biceps</li>
+                                    </ul>
+                                    <a href="https://music.youtube.com/browse/MPREb_FY5wMWTZiL6" target="_blank"
+                                        class="btn btn-primary">Escuchar album</a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="./imagenes/nada-personal.jpg" class="d-block w-100 img-fluid rounded"
+                                    alt="portada del album Nada Personal">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <section class="txt">
+                                    <h3 class="text-gold">Álbum: Nada Personal</h3>
+                                    <p>Lanzamiento: 21 de noviembre de 1985 por Estudios Moebio (Buenos Aires,
+                                        Argentina)</p>
+                                    <p>Canciones: </p>
+                                    <ul>
+                                        <li>Nada personal</li>
+                                        <li>Si no fuera por..</li>
+                                        <li>Cuando pase el temblor</li>
+                                        <li>Danza rota</li>
+                                        <li>El cuerpo del delito</li>
+                                        <li>Juego de seducción</li>
+                                        <li>Estoy azulado</li>
+                                        <li>Observándonos (Satélites)</li>
+                                        <li>Imágenes retro (Telarañas)</li>
+                                        <li>Ecos</li>
+                                    </ul>
+                                    <a href="https://music.youtube.com/browse/MPREb_xkBO3uL2Y0v" target="_blank"
+                                        class="btn btn-primary">Escuchar Album</a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="./imagenes/signos.jpg" class="d-block w-100 img-fluid rounded"
+                                    alt="portada del album Signos">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <section class="txt">
+                                    <h3 class="text-gold">Álbum: Signos</h3>
+                                    <p>Lanzamiento: 10 de noviembre de 1986 por Discográfica: Sony Music</p>
+                                    <p>Canciones: </p>
+                                    <ul>
+                                        <li>Sin sobresaltos</li>
+                                        <li>El rito</li>
+                                        <li>Prófugos</li>
+                                        <li>No existes</li>
+                                        <li>Persiana americana</li>
+                                        <li>En camino</li>
+                                        <li>Signos</li>
+                                        <li>Final caja negra</li>
+                                    </ul>
+                                    <a href="https://music.youtube.com/browse/MPREb_vT1f0GE91Sa" target="_blank"
+                                        class="btn btn-primary">Escuchar Álbum</a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="./imagenes/doble-vida.jpg" class="d-block w-100 img-fluid rounded"
+                                    alt="album Doble Vida">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <section class="txt">
+                                    <h3 class="text-gold">Álbum: Doble Vida</h3>
+                                    <p>Lanzamiento: 15 de septiembre de 1988 por Discográfica: Sony Music</p>
+                                    <p>Canciones: </p>
+                                    <ul>
+                                        <li>Pícnic en el 4° B</li>
+                                        <li>En la ciudad de la furia</li>
+                                        <li>Lo que sangra (La cúpula)</li>
+                                        <li>En el borde</li>
+                                        <li>Languis</li>
+                                        <li>Día común - Doble vida</li>
+                                        <li>Corazón delator</li>
+                                        <li>El ritmo de tus ojos</li>
+                                        <li>Terapia de amor intensiva</li>
+                                    </ul>
+                                    <a href="https://music.youtube.com/browse/MPREb_21QKw3VDMXz" target="_blank"
+                                        class="btn btn-primary">Escuchar Álbum</a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="./imagenes/cancin-animal.jpg" class="d-block w-100 img-fluid rounded"
+                                    alt="album Cancion Animal">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <section class="txt">
+                                    <h3 class="text-gold">Álbum: Canción animal</h3>
+                                    <p>Lanzamiento: 7 de agosto de 1990 por Discográfica: Sony Music</p>
+                                    <p>Canciones: </p>
+                                    <ul>
+                                        <li>(En) El séptimo día</li>
+                                        <li>Un millón de años luz</li>
+                                        <li>Canción animal</li>
+                                        <li>1990</li>
+                                        <li>Sueles dejarme solo</li>
+                                        <li>De música ligera</li>
+                                        <li>Hombre al agua</li>
+                                        <li>Entre caníbales</li>
+                                        <li>Té para 3</li>
+                                        <li>Cae el sol</li>
+                                    </ul>
+                                    <a href="https://music.youtube.com/browse/MPREb_ZMGnFMwKuo8" target="_blank"
+                                        class="btn btn-primary">Escuchar Álbum</a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="./imagenes/dynamo.jpg" class="d-block w-100 img-fluid rounded"
+                                    alt="album Dynamo">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <section class="txt">
+                                    <h3 class="text-gold">Álbum: Dynamo</h3>
+                                    <p>Lanzamiento: 26 de octubre de 1992 por Discográfica: Sony Music</p>
+                                    <p>Canciones: </p>
+                                    <ul>
+                                        <li>Secuencia inicia</li>
+                                        <li>Toma la ruta</li>
+                                        <li>En remolinos</li>
+                                        <li>Primavera 0</li>
+                                        <li>Camaleón</li>
+                                        <li>Luna roja</li>
+                                        <li>Sweet sahumerio</li>
+                                        <li>Ameba</li>
+                                        <li>Nuestra Fe</li>
+                                        <li>Claroscuro</li>
+                                        <li>Fue</li>
+                                        <li>Texturas</li>
+                                    </ul>
+                                    <a href="https://music.youtube.com/browse/MPREb_7pdyN8yITUU" target="_blank"
+                                        class="btn btn-primary">Escuchar Álbum</a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <img src="./imagenes/sueñoStereo.jpg" class="d-block w-100 img-fluid rounded"
+                                    alt="album Sueño Stereo">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <section class="txt">
+                                    <h3 class="text-gold">Álbum: Sueño Stereo</h3>
+                                    <p>Lanzamiento: 21 de junio de 1995 por Discográfica: Sony Music</p>
+                                    <p>Canciones: </p>
+                                    <ul>
+                                        <li>Ella usó mi cabeza como un revólver</li>
+                                        <li>Disco eterno</li>
+                                        <li>Zoom</li>
+                                        <li>Ojo de la tormenta</li>
+                                        <li>Efecto doppler</li>
+                                        <li>Paseando por Roma</li>
+                                        <li>Pasos</li>
+                                        <li>Ángel eléctrico</li>
+                                        <li>Crema de estrellas</li>
+                                        <li>Planta</li>
+                                        <li>X-Playo</li>
+                                        <li>Moirè</li>
+                                    </ul>
+                                    <a href="https://music.youtube.com/browse/MPREb_7LvbQPQlUGp" target="_blank"
+                                        class="btn btn-primary">Escuchar Álbum</a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="./imagenes/Galería 2.jpg" alt="imagen 2" class="img-fluid rounded shadow">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="musica" class="py-5">
+        <div class="container">
+            <div class="contenedor-reproductor text-center">
+                <section class="reproductor">
+                    <h2>Título</h2>
+                    <p>Nombre</p>
+                    <audio id="cancion" class="w-100">
+                        <source src="" type="audio/mpeg" />
+                    </audio>
+                    <input type="range" value="0" id="progreso" class="w-100 my-3" />
+                    <div class="controls d-flex justify-content-center gap-3">
+                        <button class="atras control btn btn-outline-secondary">
+                            <i class="bi bi-rewind-circle-fill"></i>
+                        </button>
+                        <button class="play btn btn-primary">
+                            <i class="bi bi-play-fill" id="icono-play"></i>
+                        </button>
+                        <button class="adelante control btn btn-outline-secondary">
+                            <i class="bi bi-fast-forward-circle-fill"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="videos" class="py-5 bg-light">
+        <div class="container text-center">
+            <h1 class="mb-3">Videos</h1>
+            <p class="lead mb-4">Disfruta en esta sección algunos de los videos con mayores visitas en Youtube</p>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/spvWfRRUW-I?si=A10_gwM_mCKg7A0c"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="./imagenes/Galería 3.jpg" alt="imagen 3" class="img-fluid rounded shadow">
+                <div class="col">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/VoGwvVoaoCw?si=VrS-LPZvPtHNyOW0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="./imagenes/Galería 4.jpg" alt="imagen 4" class="img-fluid rounded shadow">
+                <div class="col">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/vNKUDiA2YQE?si=r4p8d4OyTHHujn36"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="./imagenes/Galería 5.jpg" alt="imagen 5" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="./imagenes/Galería 6.jpg" alt="imagen 6" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="./imagenes/Galería 7.jpg" alt="imagen 7" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="./imagenes/Galería 8.jpg" alt="imagen 8" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="./imagenes/Galería 9.jpg" alt="imagen 9" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="./imagenes/Galería 10.jpg" alt="imagen 10" class="img-fluid rounded shadow">
+                <div class="col">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/eguctGjUNLI?si=Z6d7slo78uDlSMHm"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <section id="galeria" class="w-100 min-vh-100 bg-black">
+        <div class="container">
+            <div class="text-center pt-5">
+                <h2>Galería</h2>
+                <p>Imagenes de Soda Stereo</p>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./imagenes/Galería 1.jpg" alt="Imagen de la Galería"/>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./imagenes/Galería 2.jpg" alt="Imagen de la Galería"/>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./imagenes/Galería 3.jpg" alt="Imagen de la Galería"/>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./imagenes/Galería 4.jpg" alt="Imagen de la Galería"/>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./imagenes/Galería 5.jpg" alt="Imagen de la Galería"/>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./imagenes/Galería 6.jpg" alt="Imagen de la Galería"/>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./imagenes/Galería 7.jpg" alt="Imagen de la Galería"/>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./imagenes/Galería 8.jpg" alt="Imagen de la Galería"/>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-        <section id="shows">
-            <h1>Últimos conciertos de la banda</h1>
-            <ul>
-                <li><strong>21 de diciembre de 2007</strong> — Buenos Aires, Argentina — Estadio Monumental (último show
-                    de
-                    la
-                    gira “Me Verás Volver)</li>
-                <li><strong>15 de diciembre de 2007</strong> — Córdoba, Argentina — Estadio Chateau Carreras</li>
-                <li><strong>9 de diciembre de 2007</strong> — Lima, Perú — Estadio Nacional</li>
-                <li><strong>8 de diciembre de 2007</strong> — Lima, Perú — Estadio Nacional</li>
-                <li><strong>4 de diciembre de 2007</strong> — Miami, EE. UU. — American Airlines Arena</li>
-                <li><strong>29 de noviembre de 2007</strong> — Caracas, Venezuela — Hipódromo La Rinconada</li>
-                <li><strong>27 de noviembre de 2007</strong> — Ciudad de Panamá, Panamá — Estadio Nacional Rod Carew
-                </li>
-                <li><strong>24 de noviembre de 2007</strong> — Bogotá, Colombia — Parque Metropolitano Simón Bolívar
-                </li>
-                <li><strong>21 de noviembre de 2007</strong> — Los Ángeles, EE. UU. — Home Depot Center</li>
-                <li><strong>16 de noviembre de 2007</strong> — Ciudad de México, México — Foro Sol</li>
-            </ul>
-        </section>
-    </main>
+    <section id="shows">
+        <h1>Últimos conciertos de la banda</h1>
+        <ul>
+            <li><strong>21 de diciembre de 2007</strong> — Buenos Aires, Argentina — Estadio Monumental (último show
+                de
+                la
+                gira “Me Verás Volver)</li>
+            <li><strong>15 de diciembre de 2007</strong> — Córdoba, Argentina — Estadio Chateau Carreras</li>
+            <li><strong>9 de diciembre de 2007</strong> — Lima, Perú — Estadio Nacional</li>
+            <li><strong>8 de diciembre de 2007</strong> — Lima, Perú — Estadio Nacional</li>
+            <li><strong>4 de diciembre de 2007</strong> — Miami, EE. UU. — American Airlines Arena</li>
+            <li><strong>29 de noviembre de 2007</strong> — Caracas, Venezuela — Hipódromo La Rinconada</li>
+            <li><strong>27 de noviembre de 2007</strong> — Ciudad de Panamá, Panamá — Estadio Nacional Rod Carew
+            </li>
+            <li><strong>24 de noviembre de 2007</strong> — Bogotá, Colombia — Parque Metropolitano Simón Bolívar
+            </li>
+            <li><strong>21 de noviembre de 2007</strong> — Los Ángeles, EE. UU. — Home Depot Center</li>
+            <li><strong>16 de noviembre de 2007</strong> — Ciudad de México, México — Foro Sol</li>
+        </ul>
+    </section>
+
     <footer class="py-5 bg-dark text-white">
         <div class="container">
             <section id="contacto" class="mb-4">
@@ -522,17 +593,20 @@
                 <p>Formulario o información de contacto.</p>
             </section>
             <h3>Sobre esta página</h3>
-            <p>Este sitio fue desarrollado por un equipo independiente. Si deseas un trabajo similar, puedes ponerte en contacto con los desarrolladores.</p>
+            <p>Este sitio fue desarrollado por un equipo independiente. Si deseas un trabajo similar, puedes ponerte en
+                contacto con los desarrolladores.</p>
             <h3>Políticas del sitio</h3>
             <ul class="list-unstyled">
                 <li><a href="#privacidad" class="text-white">Política de Privacidad</a></li>
                 <li><a href="#copyright" class="text-white">Copyright</a></li>
             </ul>
-            <p id="copyright">© 2025 Todos los derechos reservados. El contenido musical pertenece a Soda Stereo y Sony Music.</p>
+            <p id="copyright">© 2025 Todos los derechos reservados. El contenido musical pertenece a Soda Stereo y Sony
+                Music.</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
