@@ -258,20 +258,39 @@ video {
   transform-origin: center; /* mantiene el centro */
 }
 
-#galeria img{
-  
-  width:  100%;
+.row,
+.col,
+.container-galeria {
+  overflow: visible !important;
 }
 
-#galeria img:hover {
-  transform: scale(1.1);
-  transition: all 0.3s linear;
+.container-galeria h2 {
+  font-size: 40px;
+  font-family: "Michroma", sans-serif;
+  border-radius: 25px;
 }
+
+img.img-fluid {
+  object-fit: cover;
+  box-shadow: 0 5px 9px yellow;
+  transition: all 0.4s linear;
+  z-index: 2;
+  position: relative;
+}
+
+img.img-fluid:hover {
+  transform: scale(1.4);
+  box-shadow: 0 5px 9px yellow !important;
+  z-index: 10;
+  position: relative;
+}
+
 
 .custom-shadow {
   box-shadow: 0 6px 15px gold;
   opacity: 0.8;
 } 
+
 
 .navbar {
   background-color:black;
