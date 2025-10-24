@@ -1,49 +1,80 @@
-.carousel-item.active {
-  display: flex !important;
-  align-items: center;
-  gap: 30px;
-  padding: 20px;
+/*3 carrusel de albumes*/
+#discografia.container {
+  width: 80% !important;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-.carousel-item {
-  min-height: 500px;
-  background-color: black;
+#discografia {
+    background-color: black;
+    border-radius: 10px;
 }
 
-.carousel-item img {
-  max-width: 45%;
-  width: 45%;
-  height: auto;
-  object-fit: contain;
-  flex-shrink: 0;
+#discografia img {
+    height: 90vh;
+    object-fit: contain;
 }
 
-.carousel-item .txt,
-.carousel-item section {
-  flex: 1;
-  padding: 15px;
-  text-align: left;
+#discografia h2 {
+  font-size: 2.3rem;
+  font-weight: bold;
   color: yellow;
-  font-size: 20px;
+  text-align: center;
+}
+#discografia h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: yellow;
 }
 
-.carousel-item ul {
-  margin-top: 10px;
-  padding-left: 20px;
+#discografia p {
+  font-size: 1rem;
+  color:yellow;
 }
 
-.carousel-item h3 {
-  margin-bottom: 15px;
+#discografia ul li {
+  line-height: 1.6;
+  color: yellow;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .carousel-item.active {
-    flex-direction: column;
-  }
-  
-  .carousel-item img {
-    max-width: 100%;
-    width: 100%;
-  }
+#discografia a.btn {
+  border-color: #ffcc00;
+  color: #ffcc00;
+  transition: 0.3s;
 }
+
+#discografia a.btn:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    border: solid yellow; 
+    border-width: 0 4px 4px 0; 
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(135deg);
+}
+
+.carousel-control-next-icon {
+    transform: rotate(-45deg); 
+}
+
+.carousel-control-prev {
+    left: -95px; 
+}
+
+.carousel-control-next {
+    right: -100px; 
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+    background-size: 100%, 100%;
+}
+
