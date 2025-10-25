@@ -1,14 +1,3 @@
-header {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%; 
-}
-html {
-  scroll-behavior: smooth;
-}
-
-
 #inicio {
     position: relative;
     height: 100vh; 
@@ -17,10 +6,7 @@ html {
     align-items: flex-end;
     justify-content: center;
     z-index: 1; 
-   
-   
 }
-
 
 .contenedor-video-fondo {
     position: absolute;
@@ -33,7 +19,6 @@ html {
 }
 
 .video-fondo {
-   
     min-width: 100%; 
     min-height: 100%;
     width: auto;
@@ -45,7 +30,6 @@ html {
     object-fit: cover; 
 }
 
-
 .oscurecer-video {
     position: absolute;
     top: 0;
@@ -56,29 +40,18 @@ html {
     z-index: 0;
 }
 
-
 .content-center {
-    
     position: relative; 
     z-index: 1; 
 }
-
 
 .logo {
     max-width: 280px; 
     height: auto;
 }
 
-
-
-
-
-
-
 h1 {
-  
     font-family: 'Michroma', sans-serif;
-    
 }
 
 p {
@@ -87,188 +60,150 @@ p {
     font-family: 'Michroma', sans-serif;
 }
 
-
-
 .pulse-animation {
-  animation: pulse 3s infinite; 
+    animation: pulse 3s infinite; 
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(1); 
-  }
-  50% {
-    transform: scale(1.1); 
-  }
-  100% {
-    transform: scale(1); 
-  }
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1); 
+    }
 }
-
 
 .navbar-toggler{
-  background-color: gold;
+    background-color: gold;
 }
+
 .navbar-collapse.show {
-  background-color: #000;
+    background-color: #000;
 }
-
-
 
 .custom-shadow {
-  box-shadow: 0 6px 15px gold;
-  opacity: 0.8;
+    box-shadow: 0 6px 15px gold;
+    opacity: 0.8;
 } 
 
 .navbar {
-  background-color:rgb(21, 21, 21);
-  text-align: center;
+    background-color:rgb(21, 21, 21);
+    text-align: center;
 }
 
 .nav-link {
-  color:gold;
-  font-size: 15px; 
-  font-family: "Michroma", sans-serif; 
-  
+    color:gold;
+    font-size: 15px; 
+    font-family: "Michroma", sans-serif; 
 }
 
 .navbar-nav .nav-link:hover {
-  color: red;
+    color: red;
 }
-
-
-
 
 .btn-outline-light{
-  --bs-btn-color: gold;
-  --bs-btn-border-color:gold ;
+    --bs-btn-color: gold;
+    --bs-btn-border-color:gold ;
 }
 
-
 .animate__animated.animate__bounce {
-  --animate-duration: 5s;
+    --animate-duration: 5s;
 }
 
 .animate__animated.animate__fadeIn{
-  --animate-duration: 5s;
+    --animate-duration: 5s;
 }
 
 .animate__animated.animate__fadeInLeftBig{
-  --animate-duration: 4s;
+    --animate-duration: 4s;
 }
 
 .animate__animated.animate__fadeInRight{
-  --animate-duration: 5s;
+    --animate-duration: 5s;
 }
 
-
-
-
+/* Estilos para sección Biografía */
 .carousel-item .txt, .carousel-item section {
-  flex: 1;
-  padding: 15px;
-  text-align: left;
-  color: yellow;
-  font-size: 20px;
+    flex: 1;
+    padding: 15px;
+    text-align: left;
+    color: yellow;
+    font-size: 20px;
 }
 
 .carousel-item ul {
-  margin-top: 10px;
-  padding-left: 20px;
+    margin-top: 10px;
+    padding-left: 20px;
 }
 
 .carousel-item h3 {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
-
-
 
 .carousel-item h2 {
-  font-size: 30px;
-  margin-bottom: 15px;
-  color: gold;
-  font-family: "Michroma", sans-serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: gold;
+    font-family: "Michroma", sans-serif;
 }
+
 .carousel-item p {
-  font-size: 20px;
-  line-height: 1.5;
-  color: white;
-  font-family: "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+    font-family: "Arial", sans-serif;
 }
 
-
-
-
-/* Estilo para los controles del carrusel para que sean más visibles */
+/* Controles del carrusel para modo oscuro en posterior sprint */
 #biografiaCarousel .carousel-control-prev-icon,
 #biografiaCarousel .carousel-control-next-icon {
-    /* El filtro invierte el color si estás en modo oscuro, si no tienes un modo oscuro global */
     filter: invert(100%); 
 }
 
 #biografia{
-background: #000000;  
-background: -webkit-linear-gradient(to right, #434343, #000000); 
-background: linear-gradient(to right, #434343, #000000); /
-
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000); 
+    background: linear-gradient(to right, #434343, #000000);
 }
 
 .card{
-background: #000000;  
-background: -webkit-linear-gradient(to right, #434343, #000000); 
-background: linear-gradient(to right, #434343, #000000); /
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000); 
+    background: linear-gradient(to right, #434343, #000000);
 }
 
 .titulo{
-  color: gold;
+    color: gold;
     font-size: 20px;
     font-family: 'Michroma', sans-serif;
-
 }
-
-.titulos{
-  color: gold;
-    font-size: 30px;
-    font-family: 'Michroma', sans-serif;
-
-}
-
-
-
-
-.carousel-indicators button {
-    
-    background-color: #ccc; 
-    width: 10px;
-    height: 10px;
-    border-radius: 50%; 
-}
-
 
 .carousel-indicators .active {
-    
     background-color: gold; 
-    
-    
 }
 
 
 .carousel-control-prev {
-  left: -50px; 
- width: auto;
+    left: -10px; 
+    width: auto;
 }
 
-
 .carousel-control-next {
-   
-    right: -50px; 
+    right: -10px; 
     width: auto;
 }
 
 
-#videos{
-background: #000000;  
-background: -webkit-linear-gradient(to right, #434343, #000000); 
-background: linear-gradient(to right, #434343, #000000); /
+body {
+   
+    cursor: url('./imagenes/cursor.png'), default;
 }
 
+.carousel-indicators,a,span,button:hover {
+    cursor: url('./imagenes/cursor\ -\ mano.png'), pointer;
+}
+
+/* fin de estilos biografia */
