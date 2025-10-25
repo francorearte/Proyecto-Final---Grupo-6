@@ -120,6 +120,8 @@ p {
   opacity: 0.8;
 } 
 
+
+
 .navbar {
   background-color:rgb(21, 21, 21);
   text-align: center;
@@ -272,15 +274,3 @@ background: -webkit-linear-gradient(to right, #434343, #000000);
 background: linear-gradient(to right, #434343, #000000); /
 }
 
-#videos {
-   
-    width: 100vw;
-    height: 100vh;
-    justify-content: center; 
-    align-items: center;     
-
-
-}
-.text-center h1{
-color: gold;
-}
