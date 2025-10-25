@@ -1,18 +1,18 @@
 /* Estilos para barra de navegación */
-section{
- width: 100vw;
- height: 100vh;
-  
-}
-.nav-link{
+
+.nav-link,h1,p{
   padding: 0;
   color: gold;
   font-size: 16px;
   font-family: 'Michroma', sans-serif;
   margin: 5px;
 }
-.nav-link:hover{
- color: rgb(215, 87, 13);
+
+.animate__animated.animate__fadeInLeftBig{
+  --animate-duration: 3s;
+} 
+.nav-link:hover,.bi:hover{
+ color: rgb(224, 0, 0);
 }
 
 .navbar-toggler{
@@ -26,127 +26,19 @@ background-color: gold;
   opacity: 0.8;
 }
 
-.contenedor-video-fondo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; 
-    z-index: -1; 
-}
-
-.video-fondo {
-   
-    min-width: 100%; 
-    min-height: 100%;
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    object-fit: cover; 
-}
-
-
-.oscurecer-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); 
-    z-index: 0;
-}
-
-
-/* header {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%; 
-}
-
-
-#inicio {
-    position: relative;
-    height: 100vh; 
-    width: 100%; 
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    z-index: 1; 
-   
-   
-}
-
-
-.contenedor-video-fondo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; 
-    z-index: -1; 
-}
-
-.video-fondo {
-   
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    object-fit: cover; 
-}
-
-
-.oscurecer-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); 
-    z-index: 0;
-}
-
-
-.content-center {
-    
-    position: relative; 
-    z-index: 1; 
-}
-
-
-.logo {
-    max-width: 280px; 
-    height: auto;
-}
-
-
-
-
-
-
-
-h1 {
+.bi{
+  color:gold;
   
-    font-family: 'Michroma', sans-serif;
-    
 }
 
-p {
-    color: gold;
-    font-size: 20px;
-    font-family: 'Michroma', sans-serif;
+img{
+   max-width: 350px; 
+   width: 100%; 
+
 }
 
 
+/* Estilo de título, parrafo e iamgen */
 
 .pulse-animation {
   animation: pulse 3s infinite; 
@@ -156,126 +48,21 @@ p {
   0% {
     transform: scale(1); 
   }
-  50% {
+  75% {
     transform: scale(1.1); 
   }
   100% {
     transform: scale(1); 
   }
 }
-
-
-.navbar-toggler{
-  background-color: gold;
-}
-.navbar-collapse.show {
-  background-color: #000;
-}
-
-
-
-.custom-shadow {
-  box-shadow: 0 6px 15px gold;
-  opacity: 0.8;
-} 
-
-.navbar {
-  background-color:rgb(21, 21, 21);
-  text-align: center;
-}
-
-.nav-link {
-  color:gold;
-  font-size: 15px; 
-  font-family: "Michroma", sans-serif; 
-  
-}
-
-.navbar-nav .nav-link:hover {
-  color: red;
-}
-
-
-
-
-.btn-outline-light{
-  --bs-btn-color: gold;
-  --bs-btn-border-color:gold ;
-}
-
-
-
-.carousel-item.active {
-  display: flex !important;
-  align-items: center;
-  gap: 30px;
-  padding: 20px;
-}
-
-.carousel-item {
-  min-height: 500px;
-  background-color: black;
-}
-
-.carousel-item1{
-  min-height: 500px;
-  background-color: black;
-}
-
-
-.carousel-item img {
-  max-width: 40%;
-  width: 40%;
-  height: auto;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.carousel-item .txt, .carousel-item section {
-  flex: 1;
-  padding: 15px;
-  text-align: left;
-  color: yellow;
-  font-size: 20px;
-}
-
-.carousel-item ul {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-.carousel-item h3 {
-  margin-bottom: 15px;
-}
-
-
-
-.carousel-item h2 {
-  font-size: 30px;
-  margin-bottom: 15px;
-  color: gold;
-  font-family: "Michroma", sans-serif;
-}
-.carousel-item p {
-  font-size: 20px;
-  line-height: 1.5;
-  color: white;
-  font-family: "Arial", sans-serif;
-}
-.animate__animated.animate__bounce {
-  --animate-duration: 5s;
-}
-
-.animate__animated.animate__fadeIn{
-  --animate-duration: 5s;
-}
-
 .animate__animated.animate__fadeInLeftBig{
   --animate-duration: 4s;
 }
-
-.animate__animated.animate__fadeInRight{
-  --animate-duration: 5s;
+.animate__animated.animate__backInRight{
+  --animate-duration: 4s;
+}
+.animate__animated.animate__zoomIn{
+  --animate-duration: 6s;
 }
 
- */
+
