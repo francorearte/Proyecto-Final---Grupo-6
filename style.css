@@ -1,0 +1,68 @@
+/* Estilos para barra de navegación */
+
+.nav-link,h1,p{
+  padding: 0;
+  color: gold;
+  font-size: 16px;
+  font-family: 'Michroma', sans-serif;
+  margin: 5px;
+}
+
+.animate__animated.animate__fadeInLeftBig{
+  --animate-duration: 3s;
+} 
+.nav-link:hover,.bi:hover{
+ color: rgb(224, 0, 0);
+}
+
+.navbar-toggler{
+background-color: gold;
+}
+.navbar{
+  background-color: rgba(0, 0, 0, 0.75)
+}
+.gold-shadow{
+  box-shadow: 0 6px 15px gold;
+  opacity: 0.8;
+}
+
+.bi{
+  color:gold;
+  
+}
+
+img{
+   max-width: 350px; 
+   width: 100%; 
+
+}
+
+
+/* Estilo de título, parrafo e iamgen */
+
+.pulse-animation {
+  animation: pulse 3s infinite; 
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); 
+  }
+  75% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
+.animate__animated.animate__fadeInLeftBig{
+  --animate-duration: 4s;
+}
+.animate__animated.animate__backInRight{
+  --animate-duration: 4s;
+}
+.animate__animated.animate__zoomIn{
+  --animate-duration: 6s;
+}
+
+
