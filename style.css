@@ -152,6 +152,19 @@ img {
 body {
 
   cursor: url('./imagenes/cursor.png'), default;
+
+
+}
+/* Estilo de sección videos */
+.custom-shadow {
+  box-shadow: 0 6px 15px gold;
+  opacity: 0.8;
+} 
+
+#videos{
+background: #000000;  
+background: -webkit-linear-gradient(to right, #434343, #000000); 
+background: linear-gradient(to right, #434343, #000000); /
 }
 
 .carousel-indicators,
