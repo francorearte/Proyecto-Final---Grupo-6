@@ -65,9 +65,6 @@ img{
   --animate-duration: 6s;
 }
 
-
-
-
 /* Estilos para sección Biografía */
 .carousel-item .txt, .carousel-item section {
     flex: 1;
@@ -229,4 +226,3 @@ body {
     height: 40px;
     background-size: 100%, 100%;
 }
-
