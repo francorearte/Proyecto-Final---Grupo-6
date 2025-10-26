@@ -1,6 +1,8 @@
 /* Estilos para barra de navegación */
 
-.nav-link,h1,p{
+.nav-link,
+h1,
+p {
   padding: 0;
   color: gold;
   font-size: 16px;
@@ -8,32 +10,36 @@
   margin: 5px;
 }
 
-.animate__animated.animate__fadeInLeftBig{
+.animate__animated.animate__fadeInLeftBig {
   --animate-duration: 3s;
-} 
-.nav-link:hover,.bi:hover{
- color: rgb(224, 0, 0);
 }
 
-.navbar-toggler{
-background-color: gold;
+.nav-link:hover,
+.bi:hover {
+  color: rgb(224, 0, 0);
 }
-.navbar{
+
+.navbar-toggler {
+  background-color: gold;
+}
+
+.navbar {
   background-color: rgba(0, 0, 0, 0.75)
 }
-.gold-shadow{
+
+.gold-shadow {
   box-shadow: 0 6px 15px gold;
   opacity: 0.8;
 }
 
-.bi{
-  color:gold;
-  
+.bi {
+  color: gold;
+
 }
 
-img{
-   max-width: 350px; 
-   width: 100%; 
+img {
+  max-width: 350px;
+  width: 100%;
 
 }
 
@@ -41,109 +47,118 @@ img{
 /* Estilo de título, parrafo e iamgen */
 
 .pulse-animation {
-  animation: pulse 3s infinite; 
+  animation: pulse 3s infinite;
 }
 
 @keyframes pulse {
   0% {
-    transform: scale(1); 
+    transform: scale(1);
   }
+
   75% {
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
+
   100% {
-    transform: scale(1); 
+    transform: scale(1);
   }
 }
-.animate__animated.animate__fadeInLeftBig{
+
+.animate__animated.animate__fadeInLeftBig {
   --animate-duration: 4s;
 }
-.animate__animated.animate__backInRight{
+
+.animate__animated.animate__backInRight {
   --animate-duration: 4s;
 }
-.animate__animated.animate__zoomIn{
+
+.animate__animated.animate__zoomIn {
   --animate-duration: 6s;
 }
 
 /* Estilos para sección Biografía */
-.carousel-item .txt, .carousel-item section {
-    flex: 1;
-    padding: 15px;
-    text-align: left;
-    color: yellow;
-    font-size: 20px;
+.carousel-item .txt,
+.carousel-item section {
+  flex: 1;
+  padding: 15px;
+  text-align: left;
+  color: yellow;
+  font-size: 20px;
 }
 
 .carousel-item ul {
-    margin-top: 10px;
-    padding-left: 20px;
+  margin-top: 10px;
+  padding-left: 20px;
 }
 
 .carousel-item h3 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .carousel-item h2 {
-    font-size: 30px;
-    margin-bottom: 15px;
-    color: gold;
-    font-family: "Michroma", sans-serif;
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: gold;
+  font-family: "Michroma", sans-serif;
 }
 
 .carousel-item p {
-    font-size: 20px;
-    line-height: 1.5;
-    color: white;
-    font-family: "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: white;
+  font-family: "Arial", sans-serif;
 }
 
 /* Controles del carrusel para modo oscuro en posterior sprint */
 #biografiaCarousel .carousel-control-prev-icon,
 #biografiaCarousel .carousel-control-next-icon {
-    filter: invert(100%); 
+  filter: invert(100%);
 }
 
-#biografia{
-    background: #000000;  
-    background: -webkit-linear-gradient(to right, #434343, #000000); 
-    background: linear-gradient(to right, #434343, #000000);
+#biografia {
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
 }
 
-.card{
-    background: #000000;  
-    background: -webkit-linear-gradient(to right, #434343, #000000); 
-    background: linear-gradient(to right, #434343, #000000);
+.card {
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
 }
 
-.titulo{
-    color: gold;
-    font-size: 20px;
-    font-family: 'Michroma', sans-serif;
+.titulo {
+  color: gold;
+  font-size: 20px;
+  font-family: 'Michroma', sans-serif;
 }
 
 .carousel-indicators .active {
-    background-color: gold; 
+  background-color: gold;
 }
 
 
 .carousel-control-prev {
-    left: -10px; 
-    width: auto;
+  left: -10px;
+  width: auto;
 }
 
 .carousel-control-next {
-    right: -10px; 
-    width: auto;
+  right: -10px;
+  width: auto;
 }
 
 
 body {
-   
-    cursor: url('./imagenes/cursor.png'), default;
+
+  cursor: url('./imagenes/cursor.png'), default;
 }
 
-.carousel-indicators,a,span,button:hover {
-    cursor: url('./imagenes/cursor\ -\ mano.png'), pointer;
+.carousel-indicators,
+a,
+span,
+button:hover {
+  cursor: url('./imagenes/cursor\ -\ mano.png'), pointer;
 }
 
 /* fin de estilos biografia */
@@ -155,13 +170,13 @@ body {
 }
 
 #discografia {
-    background-color: black;
-    border-radius: 10px;
+  background-color: black;
+  border-radius: 10px;
 }
 
 #discografia img {
-    height: 90vh;
-    object-fit: contain;
+  height: 90vh;
+  object-fit: contain;
 }
 
 #discografia h2 {
@@ -170,6 +185,7 @@ body {
   color: yellow;
   text-align: center;
 }
+
 #discografia h3 {
   font-size: 1.8rem;
   font-weight: bold;
@@ -178,7 +194,7 @@ body {
 
 #discografia p {
   font-size: 1rem;
-  color:yellow;
+  color: yellow;
 }
 
 #discografia ul li {
@@ -199,30 +215,146 @@ body {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-image: none;
-    border: solid yellow; 
-    border-width: 0 4px 4px 0; 
-    display: inline-block;
-    padding: 10px;
-    transform: rotate(135deg);
+  background-image: none;
+  border: solid yellow;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(135deg);
 }
 
 .carousel-control-next-icon {
-    transform: rotate(-45deg); 
+  transform: rotate(-45deg);
 }
 
 .carousel-control-prev {
-    left: -95px; 
+  left: -95px;
 }
 
 .carousel-control-next {
-    right: -100px; 
+  right: -100px;
 }
 
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 40px;
-    height: 40px;
-    background-size: 100%, 100%;
+  width: 40px;
+  height: 40px;
+  background-size: 100%, 100%;
+}
+
+/*seccion reproductor*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+#musica * {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor-reproductor {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background: url(./imagenes/bocanada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(8px);
+}
+
+.contenedor-reproductor::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.contenedor-reproductor>* {
+  position: relative;
+  z-index: 3;
+}
+
+.reproductor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 400px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgba(228, 228, 228, 0.3);
+}
+
+.reproductor h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8;
+  color: rgba(228, 228, 228);
+}
+
+.reproductor p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(228, 228, 228);
+  opacity: 0.6;
+}
+
+#progreso {
+  appearance: none;
+  width: 85%;
+  height: 10px;
+  background: rgba(165, 165, 165, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#progreso::-webkit-slider-thumb {
+  appearance: none;
+  background: rgba(165, 165, 165, 0.3);
+  width: 15px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  outline: 3px solid rgb(0, 0, 0);
+  box-shadow: 0 5px 9px yellow;
+}
+
+.controls button {
+  width: 50px;
+  aspect-ratio: 1/1;
+  margin: 15px;
+  background: rgba(165, 165, 165, 0.3);
+  color: yellow;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  outline: 0;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 9px yellow;
+  transition: all 0.3s linear;
+}
+
+.controls .control:hover {
+  transform: scale(1.1);
+}
+
+.controls .play {
+  transform: scale(1.1);
+}
+
+.controls .play:hover {
+  transform: scale(1.2);
+}
+
+.contenedor-reproductor {
+  transform: scale(0.7);
+  /* achica todo al 80% */
+  transform-origin: center;
+  /* mantiene el centro */
 }

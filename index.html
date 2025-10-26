@@ -582,20 +582,31 @@
     </section>
 
 
+
     <section id="musica">
-        <div>
-            <h2>Canciónes</h2>
-            <audio src="./canciones/Ella Usó Mi Cabeza Como Un Revólver (Remasterizado 2007).mp3"></audio>
-            <div>
-                <button>retroseder/volver</button>
-                <button>Play/Pausa</button>
-                <button>Adelantar/pasar</button>
-            </div>
-            <div>
-                <input type="range" min="0" max="100" value="0" />
-            </div>
+        <div class="contenedor-reproductor">
+            <section class="reproductor">
+                <h2>Titulo</h2>
+                <p>Nombre</p>
+                <audio id="cancion">
+                    <source src="" type="audio" />
+                </audio>
+                <input type="range" value="0" id="progreso" />
+                <div class="controls">
+                    <button class="atras control">
+                        <i class="bi bi-rewind-circle-fill"></i>
+                    </button>
+                    <button class="play">
+                        <i class="bi bi-play-fill" id="icono-play"></i>
+                    </button>
+                    <button class="adelante control">
+                        <i class="bi bi-fast-forward-circle-fill"></i>
+                    </button>
+                </div>
+            </section>
         </div>
     </section>
+
 
     <section id="videos">
         <h2 class="titulo fs-6">Videos </h2>
