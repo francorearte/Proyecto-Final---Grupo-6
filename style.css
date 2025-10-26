@@ -371,3 +371,24 @@ button:hover {
   transform-origin: center;
   /* mantiene el centro */
 }
+
+/*seccion galeria */
+#galeria .col-lg-3 {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+#galeria img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  padding: 5px;
+}
+
+#galeria img:hover {
+  /*border: 5px solid yellow;*/
+  transform: scale(1.2);
+  box-shadow: 0 5px 9px yellow !important;
+  transition: all 0.4s linear;
+}
