@@ -1,115 +1,54 @@
-/*seccion reproductor*/
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+#musica {
+  background: url(./imagenes/bocanada.jpg) no-repeat center/cover;
+  backdrop-filter: blur(8px);
+  position: relative;
+}
 
-#musica * {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#musica::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
 }
 
 .contenedor-reproductor {
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  align-items: center;
-  background: url(./imagenes/bocanada.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  backdrop-filter: blur(8px);
-}
-
-.contenedor-reproductor::before {
-  content: '';
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-
-.contenedor-reproductor>* {
   position: relative;
-  z-index: 3;
+  z-index: 2;
 }
 
 .reproductor {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 400px;
-  padding: 10px;
-  border-radius: 30px;
   background-color: rgba(228, 228, 228, 0.3);
+  color: #fff;
+  backdrop-filter: blur(5px);
 }
 
-.reproductor h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.8;
-  color: rgba(228, 228, 228);
-}
-
-.reproductor p {
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: rgba(228, 228, 228);
-  opacity: 0.6;
-}
-
-#progreso {
-  appearance: none;
-  width: 85%;
-  height: 10px;
-  background: rgba(165, 165, 165, 0.3);
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#progreso::-webkit-slider-thumb {
-  appearance: none;
-  background: rgba(165, 165, 165, 0.3);
-  width: 15px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  outline: 3px solid rgb(0, 0, 0);
-  box-shadow: 0 5px 9px yellow;
-}
-
+/* Botones */
 .controls button {
-  width: 50px;
-  aspect-ratio: 1/1;
-  margin: 15px;
   background: rgba(165, 165, 165, 0.3);
   color: yellow;
   border-radius: 50%;
   border: 1px solid yellow;
-  outline: 0;
   font-size: 1.5rem;
   box-shadow: 0 5px 9px yellow;
-  transition: all 0.3s linear;
+  transition: transform 0.3s;
 }
-
-.controls .control:hover {
+.controls button:hover {
   transform: scale(1.1);
 }
 
-.controls .play {
-  transform: scale(1.1);
+/* Range */
+#progreso {
+  appearance: none;
+  height: 10px;
+  background: rgba(165, 165, 165, 0.3);
+  border-radius: 5px;
 }
-
-.controls .play:hover {
-  transform: scale(1.2);
-}
-
-.contenedor-reproductor {
-  transform: scale(0.7);
-  /* achica todo al 80% */
-  transform-origin: center;
-  /* mantiene el centro */
+#progreso::-webkit-slider-thumb {
+  appearance: none;
+  background: yellow;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
 }
