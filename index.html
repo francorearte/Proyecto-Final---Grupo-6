@@ -340,7 +340,7 @@
         </div>
     </section>
 
-    <section id="discografia" class="py-5 bg-dark text-light" style="width: 97%; margin: 0 auto;">
+    <section id="discografia" class="py-5 bg-dark text-light" style="width: 100%; margin: 0 auto;">
         <h2 class="fw-bold">Primeros Siete Álbumes</h2>
         <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -582,29 +582,32 @@
 
 
 
-    <section id="musica">
-        <div class="contenedor-reproductor">
-            <section class="reproductor">
-                <h2>Titulo</h2>
-                <p>Nombre</p>
-                <audio id="cancion">
-                    <source src="" type="audio" />
-                </audio>
-                <input type="range" value="0" id="progreso" />
-                <div class="controls">
-                    <button class="atras control">
-                        <i class="bi bi-rewind-circle-fill"></i>
-                    </button>
-                    <button class="play">
-                        <i class="bi bi-play-fill" id="icono-play"></i>
-                    </button>
-                    <button class="adelante control">
-                        <i class="bi bi-fast-forward-circle-fill"></i>
-                    </button>
+    <section id="musica" class="d-flex justify-content-center align-items-center min-vh-100">
+        <div class="container-fluid contenedor-reproductor">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-9 col-md-6 col-lg-4 reproductor text-center p-4 rounded-4">
+                    <h2 class="fw-bold">Título</h2>
+                    <p class="mb-3">Nombre</p>
+                    <audio id="cancion">
+                        <source src="" type="audio/mp3" />
+                    </audio>
+                    <input type="range" value="0" id="progreso" class="w-100 my-3" />
+                    <div class="controls d-flex justify-content-center gap-3">
+                        <button class="btn control atras">
+                            <i class="bi bi-rewind-circle-fill"></i>
+                        </button>
+                        <button class="btn play">
+                            <i class="bi bi-play-fill" id="icono-play"></i>
+                        </button>
+                        <button class="btn control adelante">
+                            <i class="bi bi-fast-forward-circle-fill"></i>
+                        </button>
+                    </div>
                 </div>
-            </section>
+            </div>
         </div>
     </section>
+
 
 
     <section id="videos" class="py-5 w-100 h-100">
@@ -695,86 +698,96 @@
         </div>
     </section>
 
-        <section id="shows" class="py-5 bg-black text-white">
-    <div class="container mt-5">
-        
-        <h1 class="text-center mb-5 fs-4 fs-md-3">Últimos conciertos de la banda</h1>
-        
-        <ul class="list-unstyled text-start fs-6 fs-md-5"> 
-            
-            <li class="mb-3">
-                <strong class="text-secondary">21 de diciembre de 2007</strong> — Buenos Aires, Argentina — Estadio Monumental 
-                <span class="d-block d-md-inline ms-md-2">(último show de la gira “Me Verás Volver)</span>
-            </li>
-            
-            <li class="mb-3">
-                <strong class="text-secondary">15 de diciembre de 2007</strong> — Córdoba, Argentina — Estadio Chateau Carreras
-            </li>
-            <li class="mb-3">
-                <strong class="text-secondary">9 de diciembre de 2007</strong> — Lima, Perú — Estadio Nacional
-            </li>
-            <li class="mb-3">
-                <strong class="text-secondary">8 de diciembre de 2007</strong> — Lima, Perú — Estadio Nacional
-            </li>
-            <li class="mb-3">
-                <strong class="text-secondary">4 de diciembre de 2007</strong> — Miami, EE. UU. — American Airlines Arena
-            </li>
-            <li class="mb-3">
-                <strong class="text-secondary">29 de noviembre de 2007</strong> — Caracas, Venezuela — Hipódromo La Rinconada
-            </li>
-            <li class="mb-3">
-                <strong class="text-secondary">27 de noviembre de 2007</strong> — Ciudad de Panamá, Panamá — Estadio Nacional Rod Carew
-            </li>
-            <li class="mb-3">
-                <strong class="text-secondary">24 de noviembre de 2007</strong> — Bogotá, Colombia — Parque Metropolitano Simón Bolívar
-            </li>
-            <li class="mb-3">
-                <strong class="text-secondary">21 de noviembre de 2007</strong> — Los Ángeles, EE. UU. — Home Depot Center
-            </li>
-            <li class="mb-3">
-                <strong class="text-secondary">16 de noviembre de 2007</strong> — Ciudad de México, México — Foro Sol
-            </li>
-        </ul>
-    </div>
-</section>
-    <footer class="bg-black py-5">
-    
-    <section id="contacto">
-        
-        <div class="container text-center text-white">
-        
-            <div class="redes">
-                
-                <h2 class="saludo-final m-4 fs-3 fs-md-1">¡Gracias Totales!</h2>
-                
-                <img class=" logo-footer img-fluid mx-auto mb-4" src="/imagenes/Logo Soda Stereo - foot.png" alt="Soda Stereo"/>
-                
-                <ul class="list-unstyled d-flex justify-content-center mb-5">
-                    <li class="mx-3"><a href="https://www.instagram.com/sodastereo" class="text-white"><i class="bi bi-instagram fs-3 fs-md-1"></i></a></li>
-                    <li class="mx-3"><a href="https://x.com/sodastereo" target="_blank" class="text-white"><i class="bi bi-twitter-x fs-3 fs-md-1"></i></a></li>
-                    <li class="mx-3"><a href="https://www.instagram.com/sodastereo" class="text-white"><i class="bi bi-spotify fs-3 fs-md-1"></i></a></li>
-                    <li class="mx-3"><a href="https://x.com/sodastereo" target="_blank" class="text-white"><i class="bi bi-youtube fs-3 fs-md-1"></i></a></li>
-                </ul>
+    <section id="shows" class="py-5 bg-black text-white">
+        <div class="container mt-5">
 
-                <h2 class="m-5 fs-5 fs-md-3">Contactos:</h2>
-                
-                <div class="row justify-content-center mb-5 align-items-center justify-content-center">
-                    <div class="col-12 col-md-6 mb-2 mb-md-0 mx-md-5">
-                        <a href="mailto:tour@sodastereo.com">tour@sodastereo.com</a>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <a href="mailto:prensa@sodastereo.com">prensa@sodastereo.com</a>
-                    </div>
-                </div>
+            <h1 class="text-center mb-5 fs-4 fs-md-3">Últimos conciertos de la banda</h1>
 
-            </div>
-            
-            <p class="mt-5 pt-3">
-                © 2025 Todos los derechos reservados. El contenido musical pertenece a Soda Stereo y Sony Music.
-            </p>
+            <ul class="list-unstyled text-start fs-6 fs-md-5">
+
+                <li class="mb-3">
+                    <strong class="text-secondary">21 de diciembre de 2007</strong> — Buenos Aires, Argentina — Estadio
+                    Monumental
+                    <span class="d-block d-md-inline ms-md-2">(último show de la gira “Me Verás Volver)</span>
+                </li>
+
+                <li class="mb-3">
+                    <strong class="text-secondary">15 de diciembre de 2007</strong> — Córdoba, Argentina — Estadio
+                    Chateau Carreras
+                </li>
+                <li class="mb-3">
+                    <strong class="text-secondary">9 de diciembre de 2007</strong> — Lima, Perú — Estadio Nacional
+                </li>
+                <li class="mb-3">
+                    <strong class="text-secondary">8 de diciembre de 2007</strong> — Lima, Perú — Estadio Nacional
+                </li>
+                <li class="mb-3">
+                    <strong class="text-secondary">4 de diciembre de 2007</strong> — Miami, EE. UU. — American Airlines
+                    Arena
+                </li>
+                <li class="mb-3">
+                    <strong class="text-secondary">29 de noviembre de 2007</strong> — Caracas, Venezuela — Hipódromo La
+                    Rinconada
+                </li>
+                <li class="mb-3">
+                    <strong class="text-secondary">27 de noviembre de 2007</strong> — Ciudad de Panamá, Panamá — Estadio
+                    Nacional Rod Carew
+                </li>
+                <li class="mb-3">
+                    <strong class="text-secondary">24 de noviembre de 2007</strong> — Bogotá, Colombia — Parque
+                    Metropolitano Simón Bolívar
+                </li>
+                <li class="mb-3">
+                    <strong class="text-secondary">21 de noviembre de 2007</strong> — Los Ángeles, EE. UU. — Home Depot
+                    Center
+                </li>
+                <li class="mb-3">
+                    <strong class="text-secondary">16 de noviembre de 2007</strong> — Ciudad de México, México — Foro
+                    Sol
+                </li>
+            </ul>
         </div>
     </section>
-</footer>
+    <footer class="bg-black py-5">
+
+        <section id="contacto">
+
+            <div class="container text-center text-white">
+
+                <div class="redes">
+
+                    <h2 class="saludo-final m-4 fs-3 fs-md-1">¡Gracias Totales!</h2>
+
+                    <img class=" logo-footer img-fluid mx-auto mb-4" src="/imagenes/Logo Soda Stereo - foot.png"
+                        alt="Soda Stereo" />
+
+                    <ul class="list-unstyled d-flex justify-content-center mb-5">
+                        <li class="mx-3"><a href="https://www.instagram.com/sodastereo" target="_blank"
+                        class="text-white"><i class="bi bi-instagram fs-3 fs-md-1"></i></a></li>
+                        <li class="mx-3"><a href="https://x.com/sodastereo" target="_blank" class="text-white"><i class="bi bi-twitter-x fs-3 fs-md-1"></i></a></li>
+                        <li class="mx-3"><a href="https://open.spotify.com/intl-es/artist/7An4yvF7hDYDolN4m5zKBp?si=I0S2jsSKSGiKgSUrB3CF2g" target="_blank" class="text-white"><i class="bi bi-spotify fs-3 fs-md-1"></i></a></li>
+                        <li class="mx-3"><a href="https://www.youtube.com/user/sodastereo?sub_confirmation=1" target="_blank" class="text-white"><i class="bi bi-youtube fs-3 fs-md-1"></i></a></li>
+                    </ul>
+
+                    <h2 class="m-5 fs-5 fs-md-3">Contactos:</h2>
+
+                    <div class="row justify-content-center mb-5 align-items-center justify-content-center">
+                        <div class="col-12 col-md-6 mb-2 mb-md-0 mx-md-5">
+                            <a href="mailto:tour@sodastereo.com">tour@sodastereo.com</a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a href="mailto:prensa@sodastereo.com">prensa@sodastereo.com</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="mt-5 pt-3">
+                    © 2025 Todos los derechos reservados. El contenido musical pertenece a Soda Stereo y Sony Music.
+                </p>
+            </div>
+        </section>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
