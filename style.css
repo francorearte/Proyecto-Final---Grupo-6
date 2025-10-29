@@ -183,9 +183,11 @@ button:hover {
 }
 
 #discografia {
-  background-color: black;
-  border-radius: 10px;
+  background: #000000;  
+  background: -webkit-linear-gradient(to right, #434343, #000000); 
+  background: linear-gradient(to right, #434343, #000000); /
 }
+
 
 #discografia img {
   height: 90vh;
@@ -241,11 +243,11 @@ button:hover {
 }
 
 .carousel-control-prev {
-  left: -95px;
+  left: 0px;
 }
 
 .carousel-control-next {
-  right: -100px;
+  right: 0px;
 }
 
 
