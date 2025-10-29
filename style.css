@@ -161,6 +161,11 @@ button:hover {
 
 /* fin de estilos biografia */
 /*3 carrusel de albumes*/
+#discografia {
+  width: 100%;
+  margin: 0 auto;
+}
+
 #discografia.container {
   width: 80% !important;
   max-width: 90%;
