@@ -285,6 +285,20 @@ button:hover {
   transform: scale(1.1);
 }
 
+#musica h3 {
+  color: yellow;
+  font-family: 'Michroma', sans-serif;
+}
+
+#musica .cancion-item {
+  color: yellow !important;
+  box-shadow: 0 5px 9px yellow;
+}
+
+#musica .cancion-item:hover {
+  background-color: rgba(255, 0, 0, 0.795) !important;
+  cursor: url('./imagenes/cursor\ -\ mano.png'), pointer;
+}
 /* Range */
 #progreso {
   appearance: none;
