@@ -27,6 +27,22 @@ p {
   background-color: rgba(0, 0, 0, 0.75)
 }
 
+.navbar .nav-btn {
+  background: transparent !important;
+  border: none !important;
+  color: gold !important;
+  font-family: 'Michroma', sans-serif;
+}
+
+.navbar .nav-btn:hover,
+.navbar .nav-btn:focus,
+.navbar .nav-btn:active {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: rgb(224, 0, 0) !important;
+  outline: none !important;
+}
+
 .gold-shadow {
   box-shadow: 0 6px 15px gold;
   opacity: 0.8;
