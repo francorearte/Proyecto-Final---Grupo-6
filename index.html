@@ -704,29 +704,29 @@
                 <p>Pasado en imagenes</p>
             </div>
             <div class="row g-0">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <img src="./imagenes/Galería 1.jpg" alt="Imagen de la Galería" />
+                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                    <img src="./imagenes/Galería 1.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <img src="./imagenes/Galería 2.jpg" alt="Imagen de la Galería" />
+                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                    <img src="./imagenes/Galería 2.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <img src="./imagenes/Galería 3.jpg" alt="Imagen de la Galería" />
+                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                    <img src="./imagenes/Galería 3.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <img src="./imagenes/Galería 4.jpg" alt="Imagen de la Galería" />
+                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                    <img src="./imagenes/Galería 4.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <img src="./imagenes/Galería 5.jpg" alt="Imagen de la Galería" />
+                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                    <img src="./imagenes/Galería 5.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <img src="./imagenes/Galería 6.jpg" alt="Imagen de la Galería" />
+                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                    <img src="./imagenes/Galería 6.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <img src="./imagenes/Galería 7.jpg" alt="Imagen de la Galería" />
+                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                    <img src="./imagenes/Galería 7.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <img src="./imagenes/Galería 8.jpg" alt="Imagen de la Galería" />
+                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                    <img src="./imagenes/Galería 8.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
                 </div>
             </div>
         </div>
@@ -834,6 +834,19 @@
         crossorigin="anonymous"></script>
 
     <script src="index.js"></script>
+    
+     <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img id="modalImage" src="" alt="Imagen ampliada de Soda Stereo" class="img-fluid rounded custom-shadow">
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 

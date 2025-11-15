@@ -362,3 +362,17 @@ a{
   font-family: 'Michroma', sans-serif;
   color: red;
 }
+
+
+.btn-close {
+    
+    background-color:gold; 
+    border-radius: 50%;
+    opacity: 1;
+}
+
+#modalImage {
+    max-height: 90vh; 
+    width: auto;
+    object-fit: contain;
+}
