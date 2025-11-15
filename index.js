@@ -164,3 +164,20 @@ window.addEventListener("scroll",function(){
         }
     })
 })
+
+
+const openModal = (imageElement) => {
+    
+    const imageSrc = imageElement.src;
+
+    const modalImage = document.getElementById('modalImage');
+
+    
+    modalImage.src = imageSrc;
+    
+    
+    const galleryModal = new bootstrap.Modal(document.getElementById('galleryModal'));
+    
+    
+    galleryModal.show();
+};
