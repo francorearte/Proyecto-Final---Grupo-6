@@ -181,3 +181,36 @@ const openModal = (imageElement) => {
     
     galleryModal.show();
 };
+
+
+const modoOscuro = () => {
+    
+    document.querySelector("body").setAttribute("class", "modo-oscuro");
+    document.querySelector("i").setAttribute("class", "bi bi-sun-fill"); 
+    
+
+    document.querySelector("#inicio-video-source").setAttribute("src", "./imagenes/Video - Soda Stereo.mp4");
+    document.querySelector("#inicio-video-bg").load(); 
+};
+const modoClaro = () => {
+    
+   
+    document.querySelector("body").setAttribute("class", "modo-claro");
+    document.querySelector("i").setAttribute("class", "bi bi-moon-fill"); 
+    
+    
+    document.querySelector("#inicio-video-source").setAttribute("src", "./imagenes/Videos - Soda 2.mp4"); 
+    document.querySelector("#inicio-video-bg").load(); 
+};
+
+const cambiarModo = () => {
+    
+    const classBody = document.querySelector("body").getAttribute("class");
+
+    if (classBody === "modo-claro") {
+        modoOscuro();
+    } else {
+        modoClaro();
+    }
+
+};

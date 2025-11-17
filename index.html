@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="light">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -25,11 +25,11 @@
 
 </head>
 
-<body>
+<body class="modo-oscuro">
 
     <section id="inicio" class="vw-100 vh-100 position-relative">
 
-        <nav class="navbar navbar-expand-lg fixed-top gold-shadow">
+        <nav class="navbar navbar-expand-lg fixed-top gold-shadow" id="main-navbar">
             <div class="container-fluid">
 
 
@@ -39,29 +39,30 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav ">
-                        <li class="nav-item mx-2">
-                            <button class="nav-btn animate__animated animate__fadeInLeftBig" data-section="inicio">Inicio</button>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link animate__animated animate__fadeInLeftBig" href="#inicio">Inicio</a>
                         </li>
-                        <li class="nav-item mx-2">
-                            <button class="nav-btn animate__animated animate__fadeInLeftBig" data-section="biografia">Biografía</button>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link animate__animated animate__fadeInLeftBig" href="#biografia">Biografía</a>
                         </li>
-                        <li class="nav-item mx-2">
-                            <button class="nav-btn animate__animated animate__fadeInLeftBig" data-section="discografia">Discografía</button>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link animate__animated animate__fadeInLeftBig"
+                                href="#discografia">Discografía</a>
                         </li>
-                        <li class="nav-item mx-2">
-                            <button class="nav-btn animate__animated animate__fadeInLeftBig" data-section="musica">Música</button>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link animate__animated animate__fadeInLeftBig" href="#musica">Música</a>
                         </li>
-                        <li class="nav-item mx-2">
-                            <button class="nav-btn animate__animated animate__fadeInLeftBig" data-section="videos">Videos</button>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link animate__animated animate__fadeInLeftBig" href="#videos">Videos</a>
                         </li>
-                        <li class="nav-item mx-2">
-                            <button class="nav-btn animate__animated animate__fadeInLeftBig" data-section="galeria">Galería</button>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link animate__animated animate__fadeInLeftBig" href="#galeria">Galería</a>
                         </li>
-                        <li class="nav-item mx-2">
-                            <button class="nav-btn animate__animated animate__fadeInLeftBig" data-section="shows">Shows</button>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link animate__animated animate__fadeInLeftBig" href="#shows">Shows</a>
                         </li>
-                        <li class="nav-item mx-2">
-                            <button class="nav-btn animate__animated animate__fadeInLeftBig" data-section="contacto">Contacto</button>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link animate__animated animate__fadeInLeftBig" href="#contacto">Contacto</a>
                         </li>
 
                     </ul>
@@ -71,30 +72,32 @@
                 </div>
 
             </div>
-            <button class="bg-transparent border-0 position-absolute top-50 end-0 translate-middle-y mx-4"
+            <button onclick="cambiarModo()" id="dl-icon" class="bg-transparent border-0 position-absolute top-50 end-0 translate-middle-y mx-4"
                 type="button">
-                <i class="bi bi-moon-stars-fill"></i>
+                <i class="bi bi-sun-fill"></i>
             </button>
         </nav>
         <div class="container">
-            <video autoplay muted loop
-                class=" w-100 h-100 position-absolute object-fit-cover top-50 start-50 translate-middle">
-                <source src="./imagenes/Video - Soda Stereo.mp4" type="video/mp4">
-                Video de fondo
-            </video>
-            <div class="bg-black opacity-50 w-100 h-100 position-absolute top-50 start-50 translate-middle"></div>
+        <video id="inicio-video-bg" autoplay muted loop
+        class="w-100 h-100 position-absolute object-fit-cover top-50 start-50 translate-middle">
+        <source id="inicio-video-source" src="./imagenes/Video - Soda Stereo.mp4" type="video/mp4">
+        Video de fondo
+    </video>
+    
+    <div id="filtro" class="bg-black opacity-75 w-100 h-100 position-absolute top-50 start-50 translate-middle"></div>
+    </div>
 
         </div>
 
 
         <div class="container-fluid  position-absolute bottom-0 start-50 translate-middle-x pb-1 pb-md-3 pb-lg-0">
             <div class="row justify-content-center align-items-end text-center text-white">
-                <div class="col-12 col-lg-11 text-center text-white px-3">
+                <div class="col-12 col-lg-11 text-center text-white">
 
                     <img src="./imagenes/Logo Soda Stereo-g.png" class="pulse-animation" alt="Descripción">
 
 
-                    <h1 class="fs-1 text-white animate__animated animate__zoomIn">
+                    <h1 class="fs-1 animate__animated animate__zoomIn">
                         La banda
                         de rock que
                         conquistó el mundo latino
@@ -112,9 +115,9 @@
 
 
 
-    <section id="biografia" class="bg-black min-vh-100 d-flex align-items-center py-3 py-md-4 py-lg-5">
+    <section id="biografia" class="min-vh-100 d-flex align-items-center py-3 py-md-4 py-lg-5">
 
-        <div class="container-fluid container-md px-2 px-sm-3 px-lg-4">
+        <div class=" container-fluid container-md px-2 px-sm-3 px-lg-4">
 
             <div id="carouselExampleFade" class="carousel slide carousel-fade custom-shadow mx-auto rounded-3"
                 style="max-width: 1200px;" data-bs-ride="false">
@@ -133,14 +136,14 @@
                 <div class="carousel-inner ">
 
 
-                    <div class="carousel-item active">
-                        <div class="bg-black card">
+                    <div class="carousel-item active ">
+                        <div class="card">
                             <div class="row g-0">
                                 <div class="col-12 col-md-4">
                                     <img src="./imagenes/Banda completa.jpg"
                                         class="img-fluid w-100 object-fit-contain m-2" alt="imagen de la banda">
                                 </div>
-                                <div class="col-12 col-md-8">
+                                <div class="col-12 col-md-8 bg-card">
                                     <div class="card-body p-2 p-sm-3 p-md-4">
                                         <h3 class="titulo fs-5 fs-md-4 mb-2 mb-md-3">Inicios</h3>
                                         <p class="card-text fs-6">
@@ -178,13 +181,13 @@
 
 
                     <div class="carousel-item">
-                        <div class="card bg-black">
+                        <div class="card">
                             <div class="row g-0">
                                 <div class="col-12 col-md-4">
                                     <img src="./imagenes/Gustavo Cerati.jpg"
                                         class="img-fluid w-100 object-fit-contain m-2" alt="imagen de gustavo cerati">
                                 </div>
-                                <div class="col-12 col-md-8">
+                                <div class="col-12 col-md-8 bg-card">
                                     <div class="card-body p-2 p-sm-3 p-md-4">
                                         <h3 class="titulo fs-5 fs-md-4 mb-2 mb-md-3">Gustavo Cerati</h3>
                                         <p class="card-text fs-6 ">
@@ -226,14 +229,14 @@
 
 
                     <div class="carousel-item">
-                        <div class="card bg-black text-white shadow">
+                        <div class="card text-white shadow">
                             <div class="row g-0">
                                 <div class="col-12 col-md-4">
                                     <img src="./imagenes/Zeta Bosio.jpg"
                                         class="img-fluid w-100 img-fluid w-100 object-fit-contain m-2"
                                         alt="Imagen de Zeta bosio">
-                                </div>
-                                <div class="col-12 col-md-8">
+                                </div> 
+                                <div class="col-12 col-md-8 bg-card">
                                     <div class="card-body p-2 p-sm-3 p-md-4">
                                         <h3 class="titulo fs-5 fs-md-4 mb-2 mb-md-3">Zeta Bosio</h3>
                                         <p class="card-text fs-6">
@@ -276,14 +279,14 @@
 
 
                     <div class="carousel-item">
-                        <div class="card bg-black text-white shadow">
+                        <div class="card text-white shadow">
                             <div class="row g-0">
                                 <div class="col-12 col-md-4">
                                     <img src="./imagenes/Charly Alberti.jpg"
                                         class="img-fluid w-100 img-fluid w-100 object-fit-contain m-2"
                                         alt="imagen de Charly Alberty">
                                 </div>
-                                <div class="col-12 col-md-8">
+                                <div class="col-12 col-md-8 bg-card">
                                     <div class="card-body p-2 p-sm-3 p-md-4">
                                         <h3 class="titulo fs-5 fs-md-4 mb-2 mb-md-3">Charly Alberti</h3>
                                         <p class="card-text fs-6">
@@ -339,9 +342,9 @@
         </div>
     </section>
 
-    <section id="discografia" class="py-5 bg-black text-light">
+    <section id="discografia" class="py-5 text-light">
         <h2 class="mt-2">Primeros Siete Álbumes de su Discografía</h2>
-        <div class="container bg-black">
+        <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
                 <div class="carousel-indicators">
@@ -361,9 +364,9 @@
                         aria-label="Slide 7"></button>
                 </div>
 
-                <div class="carousel-inner bg-black">
+                <div class="carousel-inner">
 
-                    <div class="carousel-item active bg">
+                    <div class="carousel-item active">
                         <div class="row align-items-center">
                             <div class="col-12 col-md-6">
                                 <img src="./imagenes/soda-stereo.jpg" class="img-fluid rounded d-block mx-auto"
@@ -644,7 +647,7 @@
 
 
 
-    <section id="videos" class="bg-black py-5 w-100 h-100">
+    <section id="videos" class="py-5 w-100 h-100">
         <div class="container mt-4">
             <div class="text-center">
 
@@ -697,42 +700,42 @@
         </div>
     </section>
 
-    <section id="galeria" class="w-100 min-vh-100 bg-black">
-        <div class="container">
-            <div class="text-center pt-5">
-
-                <p>Pasado en imagenes</p>
+    <section id="galeria" class="w-100 min-vh-100">
+    <div class="container">
+        <div class="text-center pt-5">
+            
+            <p>Pasado en imágenes</p>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                <img src="./imagenes/Galería 1.jpg" alt="Imagen de la Galería" onclick="openModal(this)" />
             </div>
-            <div class="row g-0">
-                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
-                    <img src="./imagenes/Galería 1.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
-                    <img src="./imagenes/Galería 2.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
-                    <img src="./imagenes/Galería 3.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
-                    <img src="./imagenes/Galería 4.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
-                    <img src="./imagenes/Galería 5.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
-                    <img src="./imagenes/Galería 6.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
-                    <img src="./imagenes/Galería 7.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
-                    <img src="./imagenes/Galería 8.jpg" alt="Imagen de la Galería" onclick="openModal(this)"/>
-                </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                <img src="./imagenes/Galería 2.jpg" alt="Imagen de la Galería" onclick="openModal(this)" />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                <img src="./imagenes/Galería 3.jpg" alt="Imagen de la Galería" onclick="openModal(this)" />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                <img src="./imagenes/Galería 4.jpg" alt="Imagen de la Galería" onclick="openModal(this)" />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                <img src="./imagenes/Galería 5.jpg" alt="Imagen de la Galería" onclick="openModal(this)" />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                <img src="./imagenes/Galería 6.jpg" alt="Imagen de la Galería" onclick="openModal(this)" />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                <img src="./imagenes/Galería 7.jpg" alt="Imagen de la Galería" onclick="openModal(this)" />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-shadow">
+                <img src="./imagenes/Galería 8.jpg" alt="Imagen de la Galería" onclick="openModal(this)" />
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="shows" class="py-5 bg-black text-white">
+    <section id="shows" class="py-5">
         <div class="container-fluid mt-5">
 
             <h1 class="text-center mb-5 fs-4 fs-md-3">Últimos conciertos de la banda</h1>
@@ -783,7 +786,7 @@
         </div>
     </section>
 
-    <footer class="bg-black py-5">
+    <footer class="py-5">
 
         <section id="contacto">
 
@@ -798,14 +801,10 @@
 
                     <ul class="list-unstyled d-flex justify-content-center mb-5">
                         <li class="mx-3"><a href="https://www.instagram.com/sodastereo" target="_blank"
-                                class="text-white"><i class="bi bi-instagram fs-3 fs-md-1"></i></a></li>
-                        <li class="mx-3"><a href="https://x.com/sodastereo" target="_blank" class="text-white"><i
-                                    class="bi bi-twitter-x fs-3 fs-md-1"></i></a></li>
-                        <li class="mx-3"><a
-                                href="https://open.spotify.com/intl-es/artist/7An4yvF7hDYDolN4m5zKBp?si=I0S2jsSKSGiKgSUrB3CF2g"
-                                target="_blank" class="text-white"><i class="bi bi-spotify fs-3 fs-md-1"></i></a></li>
-                        <li class="mx-3"><a href="https://www.youtube.com/user/sodastereo?sub_confirmation=1"
-                                target="_blank" class="text-white"><i class="bi bi-youtube fs-3 fs-md-1"></i></a></li>
+                        class="text-white"><i class="bi bi-instagram fs-3 fs-md-1"></i></a></li>
+                        <li class="mx-3"><a href="https://x.com/sodastereo" target="_blank" class="text-white"><i class="bi bi-twitter-x fs-3 fs-md-1"></i></a></li>
+                        <li class="mx-3"><a href="https://open.spotify.com/intl-es/artist/7An4yvF7hDYDolN4m5zKBp?si=I0S2jsSKSGiKgSUrB3CF2g" target="_blank" class="text-white"><i class="bi bi-spotify fs-3 fs-md-1"></i></a></li>
+                        <li class="mx-3"><a href="https://www.youtube.com/user/sodastereo?sub_confirmation=1" target="_blank" class="text-white"><i class="bi bi-youtube fs-3 fs-md-1"></i></a></li>
                     </ul>
 
                     <h2 class="m-5 fs-5 fs-md-3">Contactos:</h2>
