@@ -1,8 +1,7 @@
 /* Estilos para barra de navegación */
 
-.nav-link,
-h1,
-p {
+.nav-link
+{
   padding: 0;
   color: gold;
   font-size: 16px;
@@ -92,6 +91,15 @@ img {
   --animate-duration: 6s;
 }
 
+h1{
+  font-family: "Michroma", sans-serif;
+  color: white;
+}
+
+p{
+  font-family: "Michroma", sans-serif;
+  color: gold;
+}
 /* Estilos para sección Biografía */
 .carousel-item .txt,
 .carousel-item section {
@@ -125,7 +133,7 @@ img {
   font-family: "Arial", sans-serif;
 }
 
-/* Controles del carrusel para modo oscuro en posterior sprint */
+/* Controles del carrusel*/
 #biografiaCarousel .carousel-control-prev-icon,
 #biografiaCarousel .carousel-control-next-icon {
   filter: invert(100%);
@@ -164,7 +172,7 @@ body {
 /* Estilo de sección videos */
 .custom-shadow {
   box-shadow: 0 6px 15px gold;
-  opacity: 0.8;
+  
 } 
 
 
@@ -362,6 +370,97 @@ a{
   font-family: 'Michroma', sans-serif;
   color: red;
 }
+
+
+
+
+.modo-oscuro{
+  background-color: #000;
+}
+
+
+
+
+
+/* estilos para modo claro */
+
+
+
+.modo-claro {
+  background: #fffeed;  
+
+
+}
+
+.modo-claro .navbar {
+  background: white; 
+}
+
+.modo-claro .nav-link,
+.modo-claro h1,
+.modo-claro p,
+.modo-claro .bi,
+.modo-claro .titulo,
+.modo-claro #discografia h2,
+.modo-claro #discografia h3,
+.modo-claro #discografia p,
+.modo-claro #discografia ul li,
+.modo-claro h2 {
+  color: #000000; 
+}
+
+.modo-claro .nav-link:hover,
+.modo-claro .bi:hover {
+  color: rgb(196, 0, 0); 
+}
+
+
+.modo-claro .carousel-indicators .active {
+  background-color: #000000;
+}
+
+.modo-oscuro-negro #biografia{
+  background-color: white;
+}
+
+.modo-claro #biografia h3,
+.modo-claro #biografia p{
+  color: black;
+}
+
+.modo-claro .gold-shadow {
+  box-shadow: 0 6px 15px gold;
+  opacity: 0.8;
+}
+
+
+
+.modo-oscuro #filtro {
+    background-color: rgba(0, 0, 0, 0.75) !important; 
+}
+
+.modo-claro #filtro {
+  
+    background-color: rgba(0, 0, 0, 0.05) !important; 
+
+}
+.modo-claro #musica {
+  background: url(./imagenes/sodamusic.jpg)center/cover;
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+
+/* estilos para modo oscuro */
+
+.modo-oscuro #biografia .bg-card{
+  background: black;
+}
+
+.modo-oscuro #shows li{
+  color: gold;
+}
+
+
 
 
 .btn-close {
