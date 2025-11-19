@@ -1,0 +1,477 @@
+/* Estilos para barra de navegación */
+
+.nav-link
+{
+  padding: 0;
+  color: gold;
+  font-size: 16px;
+  font-family: 'Michroma', sans-serif;
+  margin: 5px;
+}
+
+.animate__animated.animate__fadeInLeftBig {
+  --animate-duration: 3s;
+}
+
+.nav-link:hover,
+.bi:hover {
+  color: rgb(224, 0, 0);
+}
+
+.navbar-toggler {
+  background-color: gold;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.75)
+}
+
+.navbar .nav-btn {
+  background: transparent !important;
+  border: none !important;
+  color: gold !important;
+  font-family: 'Michroma', sans-serif;
+}
+
+.navbar .nav-btn:hover,
+.navbar .nav-btn:focus,
+.navbar .nav-btn:active {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: rgb(224, 0, 0) !important;
+  outline: none !important;
+}
+
+.gold-shadow {
+  box-shadow: 0 6px 15px gold;
+  opacity: 0.8;
+}
+
+.bi {
+  color: gold;
+
+}
+
+img {
+  max-width: 350px;
+  width: 100%;
+
+}
+
+
+/* Estilo de título, parrafo e iamgen */
+
+.pulse-animation {
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate__animated.animate__fadeInLeftBig {
+  --animate-duration: 4s;
+}
+
+.animate__animated.animate__backInRight {
+  --animate-duration: 4s;
+}
+
+.animate__animated.animate__zoomIn {
+  --animate-duration: 6s;
+}
+
+h1{
+  font-family: "Michroma", sans-serif;
+  color: white;
+}
+
+p{
+  font-family: "Michroma", sans-serif;
+  color: gold;
+}
+/* Estilos para sección Biografía */
+.carousel-item .txt,
+.carousel-item section {
+  flex: 1;
+  padding: 15px;
+  text-align: left;
+  color: yellow;
+  font-size: 20px;
+}
+
+.carousel-item ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.carousel-item h3 {
+  margin-bottom: 15px;
+}
+
+.carousel-item h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: gold;
+  font-family: "Michroma", sans-serif;
+}
+
+.carousel-item p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+/* Controles del carrusel*/
+#biografiaCarousel .carousel-control-prev-icon,
+#biografiaCarousel .carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+
+
+.titulo {
+  color: gold;
+  font-size: 20px;
+  font-family: 'Michroma', sans-serif;
+}
+
+.carousel-indicators .active {
+  background-color: gold;
+}
+
+
+.carousel-control-prev {
+  left: -10px;
+  width: auto;
+}
+
+.carousel-control-next {
+  right: -10px;
+  width: auto;
+}
+
+
+body {
+
+  cursor: url('./imagenes/cursor.png'), default;
+
+
+}
+/* Estilo de sección videos */
+.custom-shadow {
+  box-shadow: 0 6px 15px gold;
+  
+} 
+
+
+.carousel-indicators,
+a,
+span,
+button:hover {
+  cursor: url('./imagenes/cursor\ -\ mano.png'), pointer;
+}
+
+/* fin de estilos biografia */
+/*3 carrusel de albumes*/
+#discografia {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#discografia.container {
+  width: 80% !important;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
+#discografia img {
+  height: 90vh;
+  object-fit: contain;
+}
+
+#discografia h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+  font-family: 'Michroma', sans-serif;
+}
+
+#discografia h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: yellow;
+}
+
+#discografia p {
+  font-size: 1rem;
+  color: yellow;
+}
+
+#discografia ul li {
+  line-height: 1.6;
+  color: yellow;
+}
+
+#discografia a.btn {
+  border-color: #ffcc00;
+  color: #ffcc00;
+  transition: 0.3s;
+}
+
+#discografia a.btn:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  border: solid yellow;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(135deg);
+}
+
+.carousel-control-next-icon {
+  transform: rotate(-45deg);
+}
+
+.carousel-control-prev {
+  left: 0px;
+}
+
+.carousel-control-next {
+  right: 0px;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  background-size: 100%, 100%;
+}
+
+/*seccion reproductor*/
+
+
+#musica {
+  background: url(./imagenes/bocanada.jpg) no-repeat center/cover;
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+
+#musica::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.contenedor-reproductor {
+  position: relative;
+  z-index: 2;
+}
+
+.reproductor {
+  background-color: rgba(228, 228, 228, 0.3);
+  color: #fff;
+  backdrop-filter: blur(5px);
+}
+
+/* Botones */
+.controls button {
+  background: rgba(165, 165, 165, 0.3);
+  color: yellow;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 9px yellow;
+  transition: transform 0.3s;
+}
+.controls button:hover {
+  transform: scale(1.1);
+}
+
+#musica h3 {
+  color: yellow;
+  font-family: 'Michroma', sans-serif;
+}
+
+#musica .cancion-item {
+  color: yellow !important;
+  box-shadow: 0 5px 9px yellow;
+}
+
+#musica .cancion-item:hover {
+  background-color: rgba(255, 0, 0, 0.795) !important;
+  cursor: url('./imagenes/cursor\ -\ mano.png'), pointer;
+}
+/* Range */
+#progreso {
+  appearance: none;
+  height: 10px;
+  background: rgba(165, 165, 165, 0.3);
+  border-radius: 5px;
+}
+#progreso::-webkit-slider-thumb {
+  appearance: none;
+  background: yellow;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+/*seccion galeria */
+#galeria .col-lg-3 {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+#galeria img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  padding: 5px;
+}
+
+#galeria img:hover {
+  /*border: 5px solid yellow;*/
+  transform: scale(1.2);
+  box-shadow: 0 5px 9px yellow !important;
+  transition: all 0.4s linear;
+}
+
+.logo-footer{
+  max-width: 550px;
+}
+
+a{
+  font-size: 20px;
+  font-family: 'Michroma', sans-serif;
+  color: red;
+}
+
+
+
+
+.modo-oscuro{
+  background-color: #000;
+}
+
+
+
+
+
+/* estilos para modo claro */
+
+
+
+.modo-claro {
+  background: #fffeed;  
+
+
+}
+
+.modo-claro .navbar {
+  background: white; 
+}
+
+.modo-claro .nav-link,
+.modo-claro h1,
+.modo-claro p,
+.modo-claro .bi,
+.modo-claro .titulo,
+.modo-claro #discografia h2,
+.modo-claro #discografia h3,
+.modo-claro #discografia p,
+.modo-claro #discografia ul li,
+.modo-claro h2 {
+  color: #000000; 
+}
+
+.modo-claro .nav-link:hover,
+.modo-claro .bi:hover {
+  color: rgb(196, 0, 0); 
+}
+
+
+.modo-claro .carousel-indicators .active {
+  background-color: #000000;
+}
+
+.modo-oscuro-negro #biografia{
+  background-color: white;
+}
+
+.modo-claro #biografia h3,
+.modo-claro #biografia p{
+  color: black;
+}
+
+.modo-claro .gold-shadow {
+  box-shadow: 0 6px 15px gold;
+  opacity: 0.8;
+}
+
+
+
+.modo-oscuro #filtro {
+    background-color: rgba(0, 0, 0, 0.75) !important; 
+}
+
+.modo-claro #filtro {
+  
+    background-color: rgba(0, 0, 0, 0.05) !important; 
+
+}
+.modo-claro #musica {
+  background: url(./imagenes/sodamusic.jpg)center/cover;
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+
+/* estilos para modo oscuro */
+
+.modo-oscuro #biografia .bg-card{
+  background: black;
+}
+
+.modo-oscuro #shows li{
+  color: gold;
+}
+
+
+
+
+.btn-close {
+    
+    background-color:gold; 
+    border-radius: 50%;
+    opacity: 1;
+}
+
+#modalImage {
+    max-height: 90vh; 
+    width: auto;
+    object-fit: contain;
+}
